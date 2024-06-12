@@ -1,0 +1,329 @@
+---
+title: "Metadata Style"
+---
+
+Metadata helps users find, use, and draw valid conclusions from data. Ensuring important details, such as titles, descriptions, and data sources, are consistently and comprehensively documented will enable users to make more informed decisions when accessing and using data. Descriptive information relevant to the dataset as a whole should be included in dataset-level metadata, and that specific to a field, field-level metadata.
+
+## Audiences and Reading Levels
+
+Text presented on the Open Data Portal should be clear, concise, and easy to understand. We would like general users of the ODP to be able to understand what each dataset is about, and also ensure that specialists have the information they need to fully use data. As a result, our goal is to use a two-tiered approach to reading levels for descriptive metadata. In all cases, avoid language only known to people who work for the City of Detroit. Keep in mind that most people visit the ODP to use data, not to read text. Text should help users achieve their data-centric goals. When relevant, audience level is indicated in guidance for individual metadata fields.
+
+-   **General audience:** Aim for an 8^th^-grade reading level, which is a common standard for text written for a broad general audience. Guidelines for general audience text include:
+
+    -   Use words the audience knows.
+
+    -   Shorter words are better than longer ones.
+
+    -   Write simple sentences.
+
+    -   Use the active voice to clearly explain "who did what". Sometimes it may be helpful to use the passive voice, especially when emphasizing a key term or concept.
+
+-   **Specialized audience:** Aim for a 12^th^-grade reading level.
+
+    -   Use a specialized or technical term when it is more accurate, precise, or locates an idea in a specialized context. Some users will scan text to find a target technical term.
+
+    -   A dataset may have more than one specialized audience. Try to incorporate language that accommodates each specialized audience.
+
+    -   Keep sentences as simple as possible. Specialized audiences also appreciate clarity. Remember, users may be scanning text or cross-referencing text and data.
+
+## Search functionality
+
+Text from a dataset's title, tags, summary, and description fields are searchable in AGO and the ODP. In AGO, advanced search functionality supports searching additional metadata fields.
+
+## Dataset-level Metadata
+
+### Title
+
+The dataset name is the title of the dataset. For details, see "Dataset Name" in the Naming Datasets and Fields section of this document.  **Audience level: General.**
+
+### Summary
+
+Text included in the Summary field is usually presented immediately after the dataset title. The Summary should explain the main topic of the dataset in one or two sentences. Aim to write a summary that is helpful on its own and when followed by the dataset Description. In a dataset's "Full Details" page on the ODP, the Summary is followed by an empty line and then the Description. On the ODP Map View, the Summary, but not the Description, is displayed. **Audience level: General.**
+
+### Description
+
+The Description, or abstract, of a dataset should explain what data is collected, how it is collected, why, and by whom. The description should provide context and enough detail to enable a user to understand why the dataset exists, what it is about, and how it might be used. The dataset description is featured in the "Full Details" page of the ODP, a dataset's homepage in AGO, and is partially displayed in some search result listings in the ODP. **Audience level: Specialized.**
+
+Start the description with an overview of the dataset and the most important information. Follow up with details. The first sentences should differ from the dataset Summary. The two fields are sometimes displayed consecutively. When applicable, the description should address the items listed below.
+
+-   Who collected the data, such as the department or organization responsible.
+
+-   How the data was collected, whether it involved surveys, sensors, administrative records, or other methods.
+
+-   Why the data is collected, for example, whether it is collected to fulfill regulatory requirements, a research initiative, or to administer a specific program or initiative.
+
+-   Describe the original intended uses of the data, including if it is intended to inform decision-making processes, support research, or enhance public transparency.
+
+-   Ordinances or regulations that govern data collection or use should be highlighted.
+
+-   If the dataset involves respondents, provide information about who they are, such as the demographic or professional characteristics, and explain how respondents were identified or recruited for data collection purposes.
+
+-   Specify any unique characteristics or limitations of the dataset users should be aware of.
+
+    -   Note data quality issues such as data gaps, incomplete records, or other known issues that may affect data analysis or interpretation.
+
+    -   If anonymization or other data masking techniques have been applied for security or privacy reasons, note the type of technique, which fields were affected and how, and implications for data interpretation.
+
+-   For geospatial datasets, the WGS84 (ESPG:4326) coordinate system is the default coordinate system for the ODP. Identify the coordinate system or projection if it differs from this standard.
+
+### References and links to related items.
+
+In the ODP and AGO, we want to help people find resources that are closely related to a dataset. At this time, we are able to link to resources from the description. Please note and include links to the items listed below from the dataset description. In the future, these items may be displayed via their independent, specialized metadata fields.  
+
+-   Current and Archived datasets. Corresponding current and archived datasets should reference and link to each other.
+
+-   Original publicly available dataset. If the dataset is a copy or subset of a dataset published elsewhere, include a link and reference to the original dataset.
+
+-   Program webpage: If available, reference and link to the City of Detroit program or initiative that results in collection of the data.
+
+-   Application or dashboard: If known, link to and reference ODP web applications and dashboards that use the dataset.
+
+### Publishing Frequency
+
+Whether and when a dataset will be updated is communicated using the Publishing Frequency metadata field. Select a publishing frequency descriptor using the following guidelines:
+
+-   For datasets that are regularly published or updated, indicate the time interval for updates. Common publishing frequencies are: Daily, Weekly, Monthly, Quarterly, or Annually. The update frequency of archived datasets that are consolidated by year should be "Annually".
+
+-   If a dataset has been finalized or is a one-time data release, select "Not Updated".
+
+-   If the update frequency is irregular or a dataset will be published on an as-needed basis, select "As Needed", and note the circumstances that would lead to an update.
+
+### Credits (Attribution)
+
+Credits (Attribution) is visible on the bottom of the AGO site page. This should contain the department that provides the dataset and any others that contribute to the dataset. Department names should be spelled out, followed by their acronym in parentheses. Indicate who contributed what to a dataset when more than one contributor is credited.
+
+Example: For the Parcels dataset, the Credits are:
+
+-   Office of the Assessor. Zoning data provided by the Buildings, Safety Engineering, and Environmental Department (BSEED) Zoning Division.
+
+## Tags
+
+Descriptive keywords and phrases should be included in the "Tags" metadata field. Tags are meant to enhance the user search experience and help people find relevant datasets easily and efficiently. Search terms a general or specialist user might use to find a dataset make good tags. Think about searching for the dataset from the perspectives of the [ODP Personas](<https://data.detroitmi.gov/pages/personas>). What keywords or tags would each persona use to find the dataset? **Audience level: General and Specialist**
+
+When creating tags, follow these criteria:
+
+-   An individual tag may be one to three words long.
+
+-   Aim for less than 20 characters per term.
+
+-   Capitalize proper nouns, such as names of specific locations, organizations, or individuals.
+
+-   Use "Title Case" for multi-word phrases to enhance readability and clarity.
+
+-   Capitalize acronyms.
+
+-   Use spaces between words in keyword phrases to enhance readability.
+
+-   Only use alphanumeric characters, spaces, and hyphens.
+
+-   When possible, singular forms of nouns over plurals and use base forms of verbs instead of specific tenses.
+
+## Applying Tags
+
+-   Each dataset must have at least one tag. Typically, a dataset has two to five tags.
+
+-   If coming from a City of Detroit department, a tag for the department must be used. The department tag should be formatted according to department naming standard. For example, if available, use the acronym, otherwise, use the short name.
+
+-   "Detroit" tags are not necessary and do not contribute to the findability of datasets in the ODP.
+
+-   Datasets that should be associated with one of the top-level categories that appear on the ODP home page should be tagged with the Category Tag used to generate the list of datasets associated with that category. Category tags are listed in Categories Table below.
+
+## Categories
+
+Most datasets should be assigned at least one category. Categories are assigned by including a tag associated with a category in a dataset's "Tags" metadata field. Note: If a category tag is applied to a resource, that resource will be placed in the associated category.
+
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| **Category**                        | **Scope and Examples**                                                                                                                                                                                                                                                        | **Tag(s)**               |
++=====================================+===============================================================================================================================================================================================================================================================================+==========================+
+| Government                          | Internal operations that support city governance and administration. Includes City budgets, human resources, and data from independent administrative and oversight units such as the Offices of the Auditor General (OAG), Inspector General (OIG), and Ombudsman.           | government               |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Public Safety                       | Activities and resources that contribute to the peace and safety of people in the city. Examples include data from DPD and DFD. If a dataset pertains specifically to physical or mental health, use the more specific category Public Health.                                | public safety            |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Property & Parcels                  | Describe the built environment, land, and other physical resources in the City, especially in the contexts of property ownership and maintenance. Examples include building inspections, demolitions, parcel lines.                                                           | property                 |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Education                           | Educational programing and resources. Includes early childhood, K12, post-secondary, and adult career development as well as resources for less formal educational opportunities such as libraries.                                                                           | education                |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Transportation                      | Transportation and mobility resources and services. Includes mobility related data on City transportation services (DDOT, paratransit), road maintenance and streetscaping, parking, e-scooter use.                                                                           | Transportation, mobility |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Public Health                       | Programs, services, and studies supporting the health of City residents as well as programs promoting healthy lifestyles. Examples include DHD programs and services and water quality reports from DWSD.                                                                     | health                   |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Areas & Boundaries                  | Districts, precincts, parcels, and other formal divisions of space in the City. These datasets include features map makers often refer to as shapes or polygons.                                                                                                              | boundary                 |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Licenses, Permits, & Certifications | Activities and resources associated with what the City has authorized private entities to do. Includes special event permits, business licenses, and building certificates of compliance.                                                                                     | permits                  |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Housing                             | Residential buildings and related programs.                                                                                                                                                                                                                                   | housing                  |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Jobs & Economy                      | City programming that encourages economic development, supports small business owners, and promotes economic opportunities for Detroit residents.                                                                                                                             | jobs, economy            |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Parks & Recreation                  | Recreational opportunities, programing, and infrastructure supporting that programming such as recreational facilities, greenways, and parks.                                                                                                                                 | parks, recreation        |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Arts & Culture                      | Programs and facilities related to the arts, libraries, museums, and public history. Includes public art locations, community art events and classes, and sponsored festivals, exhibitions and fellowships.                                                                   | arts                     |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Environment                         | Programs and activities related to the natural environment or environmental sustainability. Also includes ecological and natural environment inventories and studies. Examples include water drainage studies, tree planting programs, canopy coverage, and mowing schedules. | environment, climate     |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+| Equity & Inclusion                  | City programming and initiatives that highlight or promote diversity, equity, and inclusion.                                                                                                                                                                                  | equity                   |
++-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+
+### Candidate Categories
+
+These categories are under consideration and may be promoted to a top-level category if use and data resources warrant doing so. If applicable, candidate category tags should be applied in addition to a primary category tag.
+
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| **Category**               | **Scope and Examples**                                                                                                                                                                                                                                  | **Tag(s)**       |
++============================+=========================================================================================================================================================================================================================================================+==================+
+| Events & Programming       | Community engagement events and programming.                                                                                                                                                                                                            | event, community |
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| Utilities & Infrastructure | Foundational infrastructure and services such as lighting, water conduits, and recycling and waste collection facilities and services. If a dataset pertains specifically to transportation or mobility, use the more specific category Transportation. | utilities        |
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+## Field-level Metadata
+
+### Field Name
+
+The field name is the name of a column, or field, in the underlying data table. For details, see "Field Name" in the Naming Datasets and Fields section of this document.
+
+### Field Label
+
+The "Field Alias" metadata field enables us to display a user-friendly field label for a data column in AGO and ODP maps and data table views. A field label should concisely convey the meaning of the data values contained in the column. A field label should be informative and enhance usability. If a Field Alias is not indicated, the field name from the underlying data table is displayed.
+
+-   Allows for spaces and most special characters: Avoid percent signs (%) and use spaces between words.
+
+-   Title Case should be used: Major words should be capitalized.
+
+-   Generally pervasive abbreviations should be used. For example, use "Address ID", not "Address Identifier".
+
+-   The descriptive purpose and usability should determine the length of a field label. Most field labels are 30 characters or less. Open data portal systems support up to 255 characters.
+
+    -   The length of the field label is a primary determinant of column width in data table views displayed on the ODP.
+
+### Recurring Field Labels
+
+Recurring field names with agreed upon spelling, formatting, and field labels will be established and maintained in the data catalog. Field labels in Table X will be included in that resource. Recurring fields that have reserved field labels and names are listed in the table along with examples of examples of corresponding data values.
+
+|Field Label|Field Name|Examples|Notes|
+|:----|:----|:----|:----|
+|Address|address|2 Woodward Ave.; 11740 E Jefferson Ave| |
+|Street Number|street_number|2; 11740| |
+|Street Prefix|street_prefix|N; E; S; W| |
+|Street Name|street_name|Woodward; Jefferson; Gratiot; Grand River| |
+|Street Type|street_type|Dr.; Ave.; St.| |
+|Unit Type|unit_type|Apt, Unit; Ste| |
+|Unit Number|unit_number|202; A; Upper; S608|Mailing address form of the unit identifier.|
+|Parcel Number|parcel_id|01004068-85; 21000422.|Alphanumeric identifier that may include a decimal point and/or hyphen|
+|Address ID|address_id|361652; 339,692|Numeric identifier of varying length. Comma separator often displayed in ODP|
+|Building ID|building_id|653; 95746|Numeric identifier of varying length. Comma separator often displayed in ODP|
+|Street ID|street_id|34,747; 23575|Numeric identifier of varying length. Comma separator often displayed in ODP|
+|Unit ID|unit_id|5,813, 256822|Numeric identifier of varying length. Comma separator often displayed in ODP|
+|Zip Code|zip_code|48226; 48214| |
+|Neighborhood|neighborhood|Downtown; Jefferson Chalmers| |
+|Council District|council_district|1; 2; 3; 4; 5; 6; 7| |
+|(Police) Precinct|police_precinct|02; 03; 04; 05; 06; 07; 08; 09; 10; 11; 12|Leading zero may be omitted. “Police” may be dropped from DPD dataset labels.|
+|(Fire) Battalion|fire_battalion|01; 02; 03; 04; 05; 06; 07; 08; HPFD; HTFD|Leading zero may be omitted. “Fire” may be dropped from DFD dataset labels.|
+|Latitude|latitude|-82.96674073| |
+|Longitude|longitude|42.36821293| |
+: Reserved field labels and field names, with examples of corresponding data values
+
+### Field Description
+
+A complete and informative field description should be provided for every field. The "Field Description" should go beyond restating the field name and provide enough information so that potential users can knowledgably analyze, interpret, and otherwise use and make decisions based on the data. When writing field descriptions, follow the criteria below. **Audience level: Specialized**.
+
+-   Clearly explain the data values contained in the field. Use technical terms if needed.
+
+-   If needed, explain how the information in the field is related to other dataset fields.
+
+-   Expand any acronyms and uncommon abbreviations used in the field name and clearly communicate the meaning of technical terms.
+
+-   Specify unique characteristics or limitations associated with field values. This could include technical and formatting constraints, ranges, or other relevant details.
+
+-   If field values are based on a data standard or controlled vocabulary, point users to information about the resource.
+
+-   Ensure field descriptions do not exceed 500 characters.
+
+## Field value type
+
+For each field, one of fifteen field value types can be selected (see table below, whichi was Modified from the [Esri Field Value table](https://doc.arcgis.com/en/arcgis-online/manage-data/describe-fields.htm#:~:text=configuring%20pop%2Dups.-,Field%20value%20types,-The%20following%20table)). The icon displayed for a field in AGO and ODP attribute metadata views is determined by the field value type. The field value type should be thought of as a categorical description of the data values rather than a "data type" in the stricter sense. Selecting a field value type does not alter the underlying data table. 
+
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Field value type**       | **Field value or feature characteristics**                                                                                                                                                                                                                                                 | **Example ODP Fields**                                                                                                                                |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Name or Title**          | Text that represents a name, title, label, or keyword for each feature.                                                                                                                                                                                                                    | Business name                                                                                                                                         |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | Structure name                                                                                                                                        |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Description**            | Text that provides a longer description of the feature, more than just a name or title.                                                                                                                                                                                                    | Violation Description                                                                                                                                 |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | URL to primary document or record                                                                                                                     |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Type or Category**       | Field values represent types or categories that group features based on a common characteristic; for example, soil type, zoning code, species, or asset type.                                                                                                                              | Payment status (when \>= 3 values possible)                                                                                                           |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | Property class or use code                                                                                                                            |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | Inspection type                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | Fields that use coding or category systems                                                                                                            |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Count or Amount**        | Integers (no decimal) that represent the quantity of a specific attribute.                                                                                                                                                                                                                 | Violation Count                                                                                                                                       |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Percentage or Ratio**    | Number values in this field reflect the relationship between different quantities; for example, the ratio between the number of males and females.                                                                                                                                         | Property Transfer Percentage                                                                                                                          |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Measurement**            | A number that reflects a characteristic that you can precisely measure. This may also be where fields that may have fallen under count or amount go if they have a decimal.                                                                                                                | Floor area                                                                                                                                            |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | Acreage                                                                                                                                               |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | (Building) Stories                                                                                                                                    |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | Duration                                                                                                                                              |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Currency**               | A number that represents monetary values.                                                                                                                                                                                                                                                  |                                                                                                                                                       |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Unique Identifier**      | The values in this field are used to positively distinguish one feature or entity from another. For example, an assessor's parcel number, a membership ID, or an invoice number.                                                                                                           | Note: Some Unique Identifiers are reserved. Fields with the labels listed below must reference Official Detroit Base Units or Office of the Assessor: |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            | A value is a unique identifier if it uniquely identifies a specific entity.                                                                                                                                                                                                                | -   Parcel Number \|                                                                                                                                  |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            | Each value per entity must be unique, but that does not necessarily mean all the values in this field will be unique for the layer.                                                                                                                                                        | -   Address ID \|                                                                                                                                     |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | -   Building ID \|                                                                                                                                    |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | -   Street ID \|                                                                                                                                      |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | -   Unit ID \|                                                                                                                                        |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Phone Number**           | This field stores phone numbers.                                                                                                                                                                                                                                                           |                                                                                                                                                       |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Email Address**          | This field stores email address strings.                                                                                                                                                                                                                                                   |                                                                                                                                                       |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Ordered or Ranked**      | The values in this field represent a feature's status in an ordered or ranked list. For example, a feature could be one of the following: \| Vault Size \| - Small, medium, or large \| \| \| - First, second, third, or fourth \| \| \| - Informational, warning, error, or failure \| \| |                                                                                                                                                       |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Binary**                 | Only one of two values are possible for each feature.                                                                                                                                                                                                                                      | Collection Status Flag                                                                                                                                |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Location or Place Name** | Values in this field represent a geographic location.                                                                                                                                                                                                                                      | Street Address                                                                                                                                        |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | Postal Code                                                                                                                                           |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | City                                                                                                                                                  |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | Precinct                                                                                                                                              |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | Council District                                                                                                                                      |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | Neighborhood                                                                                                                                          |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Coordinate**             | These fields store a geographic coordinate value.                                                                                                                                                                                                                                          | Latitude                                                                                                                                              |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | Longitude                                                                                                                                             |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Date and Time**          | Values in this field store explicit dates and times or date references such as days of the week, months, or years.                                                                                                                                                                         | Sale Date                                                                                                                                             |
+|                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
+|                            |                                                                                                                                                                                                                                                                                            | Hearing Time                                                                                                                                          |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+
+
+## References
+
+City of Detroit. (n.d.). *Open Data Portal Personas*. Detroit Open Data Portal. <https://data.detroitmi.gov/pages/personas>
+
+Laubheimer, P. (2022, April 3). *Data tables: Four major user tasks*. Nielsen Norman Group. <https://www.nngroup.com/articles/data-tables/>
+
+Riederer, E. (2020, Sept. 6). *Column names as contracts*. Emily Riederer. <https://emilyriederer.netlify.app/post/column-name-contracts/>

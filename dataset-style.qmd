@@ -1,0 +1,203 @@
+---
+title: "Dataset Style"
+---
+
+The Detroit Open Data Portal (ODP) is the primary gateway to current City of Detroit data that can be accessed through maps, data tables, dashboards, and applications designed to support the needs and interests of our primary user groups in the conduct of their everyday business and lives. Our primary user groups are represented in the following personas: Detroit Resident, Detroit Community Group, Detroit Businessperson, Detroit Researcher, City of Detroit Staff, and Detroit Public Administrator. [Information about ODP personas](https://data.detroitmi.gov/pages/personas) is available through the Open Data Portal.
+
+# Dataset Content & Structure
+
+-   **Current data**: Datasets on the ODP represent up-to-date official records that are created or actively used, referenced, or updated on a recurring basis during the current calendar or fiscal year as a part of the conduct of City of Detroit business.
+
+    -   Recent and active records are relevant to the needs and interests of the majority of our primary user groups in the conduct of their everyday business and lives.
+
+    -   **Archive and Research Hub:** Access to datasets that represent inactive and historical records retained by the City will be provided by a dedicated Archive and Research hub designed to promote access to datasets suited to retrospective, trend, and historical analyses and other uses focused on past or longer-term practices, states, and events.
+
+    -   Segmenting records represented in datasets by activity level enables us to better support access to data based on use cases.
+
+-   **Suitable for public access.** Data resources must be reviewed to ensure alignment with security and privacy regulations, protocols, and practices before publication to the Open Data Portal.
+
+-   **Raw data preferred:** Datasets should represent the rawest (i.e., closest to original) form of data permitted for public use. Avoid unnecessarily aggregating or summarizing data by geographic, temporal, demographic, or other factors. Raw data supports a greater variety of secondary uses.
+
+-   **Authoritative source preferred:** For any given data field, the organizational unit or other entity that produces, captures, or is instrumental to the creation of that data is the preferred source.
+
+-   **Parsimonious datasets:** Each field should be represented in one and only one column. Extraneous fields may hamper the ability of users to compare and reference data values across fields if the fields are far apart or require the user to scroll horizontally to see them.
+
+    -   **Exception:** Street address components should be broken into separate component fields to enable filtering in the ODP. A separate field that contains all address components may also be included.
+
+-   **Clearly defined tables:** There should be one table for each "kind" of record. For each table, you should be able to complete the sentence: "Each row in the table is a \_\_\_\_\_\_\_\_\_\_." (e.g., "Inspection!", "Park!", "License!").
+
+-   **Geocoding:** Detroit Base Units is the preferred geocoding resource.
+
+-   **Data persistence:** Information conveyed by a dataset at any given time should persist in the ODP across dataset updates. Though a general rule of thumb is to never delete (or replace) dataset values, the best approach to ensuring data persists may vary by dataset. For example:
+
+    -   For datasets with fields that will change as an entity's status changes, key dates associated with each status transition might be captured in a date field.
+
+    -   If a dataset consists of items or subsets of items associated with records in a second dataset, the relationship between the two datasets should be described and a URL link provided. A unique identifier should be available in each dataset so the datasets can be joined or merged. If an application or dashboard provides access to the datasets, include a reference and link to it in the dataset description.
+
+    -   **Exception:** If a dataset's values were removed or updated due to an error, it is not necessary to retain the erroneous dataset. What was wrong, what was done to correct the error, and relevant dates should be documented. If appropriate, the 'fix' can be communicated via the ODP Change Log.
+
+-   **Language should maintain meaning:** When writing descriptions, naming columns, and so forth, language that has the same meaning when it is recorded and when it is (later) read by someone using the dataset should be used.
+
+    -   For example, if the meaning of a relative reference to time (e.g., "now", "this year", "new") is likely to eventually differ between when it was recorded and the time it is read, reference a specific year, date range, or other time unit instead. An exception to this principle would be if a category name includes a time-specific reference. For example, a building might be aptly described using a category such as "new construction".  In such cases, the category should be clearly defined.
+
+-   **Table usability:** For tabular datasets that will be used primarily on the ODP, structure tables to enable people to perform common tasks. Common tasks include finding records that fit specific criteria, including looking up known items, and comparing values across and within records (Laubheimer, 2022).
+
+    -   Most datasets that will be used directly in the Open Data Portal should be structured so that there is one row for each primary row entity. A "primary row entity" is whatever can be used to accurately complete the sentence, "Each row in the table is a \_\_\_\_\_\_\_." This structure enables a person to see everything about an entity that is a member of the dataset by reading across a single row.
+
+    -   If it is necessary to have more than one row for one or more row entities in a dataset, this should be communicated clearly in the dataset description.
+
+-   **Application reference datasets.** Datasets that correspond with a dashboard, application, or other resource should typically inherit the data structure of the parent resource. If the parent resource is very complex (with many fields) or very atomistic (with relatively few fields dispersed across many tables), it may be appropriate to restructure data to enhance table usability.
+
+    -   Anticipated data uses and whether a dataset is downloadable directly from the parent resource should be considered when making decisions about restructuring a dataset.
+
+    -   In the dataset description provide a link to the dashboard, application, or other data resource the dataset is related to.
+
+## Data Table Completeness
+
+-   **Unique Identifier:** All tables should include a unique identifier field that can be used to identify distinct records. This type of unique identifier is sometimes called a primary key.
+
+-   **Join fields:** If there are multiple related tables, each should include a column that allows the tables to be joined or merged. Typically, this is a unique identifier or "key" data field.
+
+-   **Date or Datetime:** If there is a date or datetime field that can be used to place records in time, include that field as a part of the dataset. Values that reflect record activity are best.
+
+-   **Category code descriptions:** If a field consists of numeric or similarly cryptic category codes, corresponding category labels or descriptions should be provided either in an adjacent, accompanying field or in the field description metadata.
+
+    -   If the category is based on a resource such as a controlled vocabulary or industry standard, clearly identify the resource.
+
+### Geospatial and Address Fields
+
+-   **Street Address plus Zip Code:** If a table includes a street address, the table should also include a corresponding 5-digit zip code.
+
+-   **Addresses outside Detroit:** If one or more addresses in a table are located outside the City of Detroit, that table should include all elements of a complete US address or, if appropriate, a complete international address.
+
+-   **Geocoded location:** When a table includes fields that identify multiple geographical locations, which location corresponds with geospatial fields should be clearly identified.
+
+## Column Grouping & Order
+
+Columns should be presented in a meaningful order that reflects prevailing practices, relationships between columns, and the relative importance of fields included in the dataset. Column order affects table usability and interpretability. General guidelines include the following:
+
+-   **The unique identifier field should be the first** (i.e., leftmost) field in the table.
+
+-   **Importance:** All else being equal, more important columns should be first (farther left).
+
+-   **Related fields should be grouped together** and follow general use conventions. For example:
+
+    -   Latitude and Longitude columns should be adjacent, with latitude preceding longitude.
+
+    -   Address elements associated with a location should be grouped together and ordered according to standard USPS practice.
+
+    -   If different levels of a category scheme are allocated to separate fields, these fields should be grouped together. Typically, a broader or more inclusive category should precede a narrower or more exclusive category. That is, categories should precede related subcategories.
+
+    -   If more than one entity is described by columns in a table, group columns by entity. For example, if both a physical and a mailing address is present, group components of the physical address together and group components of the mailing address together.
+
+-   **Chronological order:** If a row presents steps in a process, arrange columns to reflect the chronology of that process.
+
+-   **Consistency across datasets:** If two datasets have similar contents and creation contexts, similarities and differences in column order can signal similarities and differences between datasets.  
+
+-   **Industry standards:** Fields of a standards-based or standards-aligned dataset should typically be ordered according to the specification of that standard.
+
+Special types of datasets may have a conventional structure that differs from one or more of these guidelines. For example, the first column in a time series dataset is typically a date or datetime variable. In such cases, it is appropriate to follow the conventional structure for the type of dataset.
+
+# Naming Datasets and Fields
+
+The dataset name and field names are integral components of a dataset that describe and set expectations for what a dataset contains (Riederer, 2020). If a dataset is downloaded for later use in a format such as a comma separated value (CSV) file, these names are the only metadata included as a part of the dataset. Concise, descriptive names that consistently follow formatting guidelines help ensure users understand data and facilitate data integration and interoperability.
+
+## Dataset Name
+
+We want datasets to have concise, descriptive, and consistently formatted names to help people identify and understand dataset content and relevance as they search and browse the ODP. Note: The dataset name is the "Title" In the dataset-level metadata.
+
+### Naming Convention
+
+-   Each dataset should have a unique name.
+
+-   The name should indicate what a dataset is about, or the main topic the data represents.
+
+-   Dataset names should be as short as possible while also being meaningful and conveying the distinctive nature of the data.
+
+-   The default assumption is that a dataset includes the most up-to-date version of active records within a calendar year framework. If a dataset covers a fiscal rather than a calendar year, add "(Current FY)" to indicate the current fiscal year. If a dataset covers the most recent calendar year, the title should be followed by "(Current)".
+
+-   Archived datasets should be stored in a separate archive hub. Replace "(Current)" with the year or date range covered by the data. This year or date range should match the year or dates indicated in the "temporal coverage" field of the dataset-level metadata.
+
+### Formatting: Casing, Spacing, and Spellings
+
+-   "Title Case" should be used. Ensure there are spaces between words for better readability.
+
+-   Avoid using abbreviations and shortened words (e.g., instead of "demo", use "demolition").
+
+-   Acronyms in the title should be expanded.
+
+## File Names for Dataset Downloads
+
+If a file is prepared so that users can download a dataset, the name of the file should be the equivalent of the dataset name, reformatted in "kebab-case".
+
+-   Use lowercase alphanumeric characters (a-z, 0-9) and hyphens (-) only.
+
+-   Spaces should be replaced by a hyphen.
+
+-   Characters such as "&" should be replaced with the equivalent word.
+
+-   File names, like dataset names, should be short and meaningful. No file name should exceed 255 characters due to common system limitations. Most should be shorter: Long file names increase the likelihood of error and are more difficult to remember and recognize.
+
+-   If relevant and supported by systems, add a version number or a version-relevant date stamp.
+
+## Field Names
+
+The field name is the machine-friendly column header in the underlying data table. In the ODP attribute metadata display, it is labeled "Name", and in AGO, "Field Name". Field names are retained in dataset files downloaded from the ODP and AGO.
+
+-   Use snake_case for field names.
+
+    -   Separate words by underscores if there are multiple words.
+
+    -   Only lowercase alphanumeric characters and underscores are allowed.
+
+-   Field names should start with a letter.
+
+-   Field names should be short and meaningful.
+
+-   Field names should contribute to overall dataset usability. For example, rather than repeating a given descriptive word in every observation (i.e., value) of an attribute, consider including that word in the column name and excluding it from the value entries.
+
+Example field name from ODI Pit Dataset
+
+::: {#tbl-panel layout-ncol="2"}
+| size         |
+|--------------|
+| Medium vault |
+| Small vault  |
+| Small vault  |
+| Large vault  |
+
+: Revision of column name and value format needed {#tbl-first}
+
+| vault_size |
+|------------|
+| Medium     |
+| Small      |
+| Small      |
+| Large      |
+
+: Preferred column name and value format {#tbl-second}
+
+Example field name from ODI Pit Dataset
+:::
+
+## Reserved identifier field names
+
+The following field names must reference Official Detroit Base Units or Office of the Assessor Parcel IDs and should not be used as names for other fields.
+
+-   address_id
+
+-   building_id
+
+-   parcel_id
+
+-   street_id
+
+-   unit_id
+
+# References
+
+City of Detroit. (n.d.). *Open Data Portal Personas*. Detroit Open Data Portal. <https://data.detroitmi.gov/pages/personas>
+
+Laubheimer, P. (2022, April 3). *Data tables: Four major user tasks*. Nielsen Norman Group. <https://www.nngroup.com/articles/data-tables/>
+
+Riederer, E. (2020, Sept. 6). *Column names as contracts*. Emily Riederer. <https://emilyriederer.netlify.app/post/column-name-contracts/>

@@ -1,0 +1,49 @@
+/*-- scss:defaults --*/
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+//
+
+
+// scss-docs-start color-variables
+$city-green:   #004445 !default;
+$spirit-green: #279989 !default;
+$pale-green:   #9FD5B3 !default;
+$light-grey:   #F2F2F2 !default;
+$accent-yellow: #FEB70d !default;
+$near-black:   #18252A !default;
+$quill-tip:    #2e3761 !default;
+$spanish-plum: #5f355a !default;
+$satsumaimo-red: #94456c !default; 
+$chinese-dragon: #cb4d4f !default;
+$mincemeat:   #b6683a !default;
+$bredon-green: #629547 !default;
+$alverda:     #a3c76f !default;
+$fountains-budapest: #B9DDF1 !default;
+$pesto-calabrese: #F28E2B !default;
+$buff-orange: #FFBE7D !default;
+$rushing-river: #607C97 !default;
+$private-jet: #899EB3 !default;
+$dandelion-wish: #E5BA64 !default;
+$italian-straw: #E7CEA2 !default;
+$pantone-grey: #b4b4b4 !default;
+$green-pigment: #008E40 !default;
+$punch:         #D72929 !default;
+$white:         #FFFFFF !default;
+// scss-docs-end color-variables
+
+
+
+// Base document colors
+$navbar-bg: $city-green; // navbar
+$navbar-fg: $white; // navbar foreground elements
+$navbar-hl: $dandelion-wish; // highlight color when hovering over navbar links
+$body-bg: $white; // page background 
+$body-color: $near-black; // page text 
+$footer-bg: $pale-green; // footer 
+$link-color: $spirit-green; // hyperlinks 
+$link-decoration: underline !default;
+
+
+

@@ -1,0 +1,28 @@
+project:
+  type: website
+
+website:
+  title: "ODP Style & Standards (Draft)"
+  navbar:
+    search: true
+    collapse: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: dataset-style.qmd
+        text: Dataset Style
+      - href: metadata-style.qmd
+        text: Metadata Style
+      - href: metadata-standards.qmd
+        text: Metadata Standards
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - cod-style.scss
+    css: styles.css
+    toc: true
+
+editor: visual
+

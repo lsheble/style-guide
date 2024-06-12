@@ -1,0 +1,28 @@
+﻿Field Name,Field Description,When to use,Use notes
+Title,Human-readable name that describes the overall content of the dataset in plain English. Concise titles that avoid jargon and acronyms are preferred.,Required,
+Description,"Human-readable summary (i.e., an abstract) of the dataset in plain English. As applicable, addresses by whom, how, and why data is collected.",Required,
+Keywords,Keywords or tags should include terms that would be used by technical and non-technical users.,Required,
+Department,"Name of the department, board, or other organizational unit that is the origin or source of the dataset ",Required,Deferred modification: Specify in accordance with Department Names Standard 
+Data Steward Name,"Name(s) of one or more data stewards responsible for managing the dataset on behalf of the organizational unit that is the source of the dataset. Names should be consistent with their listing in City Directories. In the case of multiple data stewards, names should be separated by a semicolon.  ",Required,Shared within organization only. 
+Data Steward contact email,"Email address for each data steward. In the case of multiple data stewards, email addresses should be listed in the same order that names are listed and separated by a semicolon.",Required,Shared within organization only.
+Publisher,The entity making the resource available publicly.,Required,City of Detroit is the publisher of all datasets that originate from organizational units within it.
+Spatial coverage,The range of geographical or spatial applicability of a dataset. Could include a spatial region like a bounding box or a named place.,Required,
+Temporal coverage,"The range of temporal applicability of a dataset (i.e., a start and end date of applicability for the data). ",Required,
+Publication date,Date on which the dataset was first issued or published.,Required,AGO generates
+Last modified,"Most recent date on which the published dataset was changed, updated or modified.",Required,AGO generates
+Frequency - publication,Frequency with which dataset updates are published.,Required,Example values: Not updated; As needed; Annually; Quarterly; Weekly; Daily
+Frequency – data updates,Frequency with which dataset source records are updated based on department practices and policies. ,Required,Example values: Not updated; As needed; Annually; Quarterly; Weekly; Daily; Hourly; Continuously
+Homepage,URL for the homepage of the human-friendly hub or landing page for the specific dataset.,Required,AGO generates
+Public access level,"The degree to which this dataset could be made available to the public, regardless of whether it has been made available.",Required,"Inherent value: By definition, “Public” for all Open Data Portal datasets."
+Distribution,Container field for lists of metadata related to each file format in which the dataset is distributed.,Required,AGO generates
+Reference,"Name, and if appropriate, URL, for supporting information such as a webpage that provides details about a program associated with the dataset.",Optional,
+Dataset notes,"Essential information not captured in other fields such as changes in data collection or methods or limitations of data quality, accuracy, or reliability.",Optional,
+Data standard,URI used to identify a standardized specification the dataset conforms to.,Optional,
+Language,The language of the dataset.,Conditional, Default is English. Specify if a different language.
+Unique identifier,"A unique machine-readable identifier for the dataset. Unique identifiers are permanently associated with a dataset and should not change when, for example, the URL of a dataset changes.",Deferred,
+License,The license or non-license (i.e. Public Domain) status with which the dataset has been published.,Deferred,
+Rights,Information regarding access or restrictions associated with dataset.,Deferred,
+Data Dictionary,URL for the data dictionary for the dataset. ,Deferred,
+Data Dictionary Format,"The machine-readable file format of the data dictionary, described using IANA Media Type, also known as the MIME Type.",Deferred,
+Related datasets,Series or collection of which the dataset is a part.,Deferred,
+Category,Main thematic category of the dataset.,Deferred,

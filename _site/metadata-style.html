@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ODP Style &amp; Standards (Draft) - Metadata Style</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">ODP Style &amp; Standards (Draft)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./dataset-style.html" rel="" target="">
+ <span class="menu-text">Dataset Style</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./metadata-style.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Metadata Style</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./metadata-standards.html" rel="" target="">
+ <span class="menu-text">Metadata Standards</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#audiences-and-reading-levels" id="toc-audiences-and-reading-levels" class="nav-link active" data-scroll-target="#audiences-and-reading-levels">Audiences and Reading Levels</a></li>
+  <li><a href="#search-functionality" id="toc-search-functionality" class="nav-link" data-scroll-target="#search-functionality">Search functionality</a></li>
+  <li><a href="#dataset-level-metadata" id="toc-dataset-level-metadata" class="nav-link" data-scroll-target="#dataset-level-metadata">Dataset-level Metadata</a>
+  <ul class="collapse">
+  <li><a href="#title" id="toc-title" class="nav-link" data-scroll-target="#title">Title</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#references-and-links-to-related-items." id="toc-references-and-links-to-related-items." class="nav-link" data-scroll-target="#references-and-links-to-related-items.">References and links to related items.</a></li>
+  <li><a href="#publishing-frequency" id="toc-publishing-frequency" class="nav-link" data-scroll-target="#publishing-frequency">Publishing Frequency</a></li>
+  <li><a href="#credits-attribution" id="toc-credits-attribution" class="nav-link" data-scroll-target="#credits-attribution">Credits (Attribution)</a></li>
+  </ul></li>
+  <li><a href="#tags" id="toc-tags" class="nav-link" data-scroll-target="#tags">Tags</a></li>
+  <li><a href="#applying-tags" id="toc-applying-tags" class="nav-link" data-scroll-target="#applying-tags">Applying Tags</a></li>
+  <li><a href="#categories" id="toc-categories" class="nav-link" data-scroll-target="#categories">Categories</a>
+  <ul class="collapse">
+  <li><a href="#candidate-categories" id="toc-candidate-categories" class="nav-link" data-scroll-target="#candidate-categories">Candidate Categories</a></li>
+  </ul></li>
+  <li><a href="#field-level-metadata" id="toc-field-level-metadata" class="nav-link" data-scroll-target="#field-level-metadata">Field-level Metadata</a>
+  <ul class="collapse">
+  <li><a href="#field-name" id="toc-field-name" class="nav-link" data-scroll-target="#field-name">Field Name</a></li>
+  <li><a href="#field-label" id="toc-field-label" class="nav-link" data-scroll-target="#field-label">Field Label</a></li>
+  <li><a href="#recurring-field-labels" id="toc-recurring-field-labels" class="nav-link" data-scroll-target="#recurring-field-labels">Recurring Field Labels</a></li>
+  <li><a href="#field-description" id="toc-field-description" class="nav-link" data-scroll-target="#field-description">Field Description</a></li>
+  </ul></li>
+  <li><a href="#field-value-type" id="toc-field-value-type" class="nav-link" data-scroll-target="#field-value-type">Field value type</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Metadata Style</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Metadata helps users find, use, and draw valid conclusions from data. Ensuring important details, such as titles, descriptions, and data sources, are consistently and comprehensively documented will enable users to make more informed decisions when accessing and using data. Descriptive information relevant to the dataset as a whole should be included in dataset-level metadata, and that specific to a field, field-level metadata.</p>
+<section id="audiences-and-reading-levels" class="level2">
+<h2 class="anchored" data-anchor-id="audiences-and-reading-levels">Audiences and Reading Levels</h2>
+<p>Text presented on the Open Data Portal should be clear, concise, and easy to understand. We would like general users of the ODP to be able to understand what each dataset is about, and also ensure that specialists have the information they need to fully use data. As a result, our goal is to use a two-tiered approach to reading levels for descriptive metadata. In all cases, avoid language only known to people who work for the City of Detroit. Keep in mind that most people visit the ODP to use data, not to read text. Text should help users achieve their data-centric goals. When relevant, audience level is indicated in guidance for individual metadata fields.</p>
+<ul>
+<li><p><strong>General audience:</strong> Aim for an 8<sup>th</sup>-grade reading level, which is a common standard for text written for a broad general audience. Guidelines for general audience text include:</p>
+<ul>
+<li><p>Use words the audience knows.</p></li>
+<li><p>Shorter words are better than longer ones.</p></li>
+<li><p>Write simple sentences.</p></li>
+<li><p>Use the active voice to clearly explain “who did what”. Sometimes it may be helpful to use the passive voice, especially when emphasizing a key term or concept.</p></li>
+</ul></li>
+<li><p><strong>Specialized audience:</strong> Aim for a 12<sup>th</sup>-grade reading level.</p>
+<ul>
+<li><p>Use a specialized or technical term when it is more accurate, precise, or locates an idea in a specialized context. Some users will scan text to find a target technical term.</p></li>
+<li><p>A dataset may have more than one specialized audience. Try to incorporate language that accommodates each specialized audience.</p></li>
+<li><p>Keep sentences as simple as possible. Specialized audiences also appreciate clarity. Remember, users may be scanning text or cross-referencing text and data.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="search-functionality" class="level2">
+<h2 class="anchored" data-anchor-id="search-functionality">Search functionality</h2>
+<p>Text from a dataset’s title, tags, summary, and description fields are searchable in AGO and the ODP. In AGO, advanced search functionality supports searching additional metadata fields.</p>
+</section>
+<section id="dataset-level-metadata" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-level-metadata">Dataset-level Metadata</h2>
+<section id="title" class="level3">
+<h3 class="anchored" data-anchor-id="title">Title</h3>
+<p>The dataset name is the title of the dataset. For details, see “Dataset Name” in the Naming Datasets and Fields section of this document. &nbsp;<strong>Audience level: General.</strong></p>
+</section>
+<section id="summary" class="level3">
+<h3 class="anchored" data-anchor-id="summary">Summary</h3>
+<p>Text included in the Summary field is usually presented immediately after the dataset title. The Summary should explain the main topic of the dataset in one or two sentences. Aim to write a summary that is helpful on its own and when followed by the dataset Description. In a dataset’s “Full Details” page on the ODP, the Summary is followed by an empty line and then the Description. On the ODP Map View, the Summary, but not the Description, is displayed. <strong>Audience level: General.</strong></p>
+</section>
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description</h3>
+<p>The Description, or abstract, of a dataset should explain what data is collected, how it is collected, why, and by whom. The description should provide context and enough detail to enable a user to understand why the dataset exists, what it is about, and how it might be used. The dataset description is featured in the “Full Details” page of the ODP, a dataset’s homepage in AGO, and is partially displayed in some search result listings in the ODP. <strong>Audience level: Specialized.</strong></p>
+<p>Start the description with an overview of the dataset and the most important information. Follow up with details. The first sentences should differ from the dataset Summary. The two fields are sometimes displayed consecutively. When applicable, the description should address the items listed below.</p>
+<ul>
+<li><p>Who collected the data, such as the department or organization responsible.</p></li>
+<li><p>How the data was collected, whether it involved surveys, sensors, administrative records, or other methods.</p></li>
+<li><p>Why the data is collected, for example, whether it is collected to fulfill regulatory requirements, a research initiative, or to administer a specific program or initiative.</p></li>
+<li><p>Describe the original intended uses of the data, including if it is intended to inform decision-making processes, support research, or enhance public transparency.</p></li>
+<li><p>Ordinances or regulations that govern data collection or use should be highlighted.</p></li>
+<li><p>If the dataset involves respondents, provide information about who they are, such as the demographic or professional characteristics, and explain how respondents were identified or recruited for data collection purposes.</p></li>
+<li><p>Specify any unique characteristics or limitations of the dataset users should be aware of.</p>
+<ul>
+<li><p>Note data quality issues such as data gaps, incomplete records, or other known issues that may affect data analysis or interpretation.</p></li>
+<li><p>If anonymization or other data masking techniques have been applied for security or privacy reasons, note the type of technique, which fields were affected and how, and implications for data interpretation.</p></li>
+</ul></li>
+<li><p>For geospatial datasets, the WGS84 (ESPG:4326) coordinate system is the default coordinate system for the ODP. Identify the coordinate system or projection if it differs from this standard.</p></li>
+</ul>
+</section>
+<section id="references-and-links-to-related-items." class="level3">
+<h3 class="anchored" data-anchor-id="references-and-links-to-related-items.">References and links to related items.</h3>
+<p>In the ODP and AGO, we want to help people find resources that are closely related to a dataset. At this time, we are able to link to resources from the description. Please note and include links to the items listed below from the dataset description. In the future, these items may be displayed via their independent, specialized metadata fields. &nbsp;</p>
+<ul>
+<li><p>Current and Archived datasets. Corresponding current and archived datasets should reference and link to each other.</p></li>
+<li><p>Original publicly available dataset. If the dataset is a copy or subset of a dataset published elsewhere, include a link and reference to the original dataset.</p></li>
+<li><p>Program webpage: If available, reference and link to the City of Detroit program or initiative that results in collection of the data.</p></li>
+<li><p>Application or dashboard: If known, link to and reference ODP web applications and dashboards that use the dataset.</p></li>
+</ul>
+</section>
+<section id="publishing-frequency" class="level3">
+<h3 class="anchored" data-anchor-id="publishing-frequency">Publishing Frequency</h3>
+<p>Whether and when a dataset will be updated is communicated using the Publishing Frequency metadata field. Select a publishing frequency descriptor using the following guidelines:</p>
+<ul>
+<li><p>For datasets that are regularly published or updated, indicate the time interval for updates. Common publishing frequencies are: Daily, Weekly, Monthly, Quarterly, or Annually. The update frequency of archived datasets that are consolidated by year should be “Annually”.</p></li>
+<li><p>If a dataset has been finalized or is a one-time data release, select “Not Updated”.</p></li>
+<li><p>If the update frequency is irregular or a dataset will be published on an as-needed basis, select “As Needed”, and note the circumstances that would lead to an update.</p></li>
+</ul>
+</section>
+<section id="credits-attribution" class="level3">
+<h3 class="anchored" data-anchor-id="credits-attribution">Credits (Attribution)</h3>
+<p>Credits (Attribution) is visible on the bottom of the AGO site page. This should contain the department that provides the dataset and any others that contribute to the dataset. Department names should be spelled out, followed by their acronym in parentheses. Indicate who contributed what to a dataset when more than one contributor is credited.</p>
+<p>Example: For the Parcels dataset, the Credits are:</p>
+<ul>
+<li>Office of the Assessor. Zoning data provided by the Buildings, Safety Engineering, and Environmental Department (BSEED) Zoning Division.</li>
+</ul>
+</section>
+</section>
+<section id="tags" class="level2">
+<h2 class="anchored" data-anchor-id="tags">Tags</h2>
+<p>Descriptive keywords and phrases should be included in the “Tags” metadata field. Tags are meant to enhance the user search experience and help people find relevant datasets easily and efficiently. Search terms a general or specialist user might use to find a dataset make good tags. Think about searching for the dataset from the perspectives of the <a href="https://data.detroitmi.gov/pages/personas">ODP Personas</a>. What keywords or tags would each persona use to find the dataset? <strong>Audience level: General and Specialist</strong></p>
+<p>When creating tags, follow these criteria:</p>
+<ul>
+<li><p>An individual tag may be one to three words long.</p></li>
+<li><p>Aim for less than 20 characters per term.</p></li>
+<li><p>Capitalize proper nouns, such as names of specific locations, organizations, or individuals.</p></li>
+<li><p>Use “Title Case” for multi-word phrases to enhance readability and clarity.</p></li>
+<li><p>Capitalize acronyms.</p></li>
+<li><p>Use spaces between words in keyword phrases to enhance readability.</p></li>
+<li><p>Only use alphanumeric characters, spaces, and hyphens.</p></li>
+<li><p>When possible, singular forms of nouns over plurals and use base forms of verbs instead of specific tenses.</p></li>
+</ul>
+</section>
+<section id="applying-tags" class="level2">
+<h2 class="anchored" data-anchor-id="applying-tags">Applying Tags</h2>
+<ul>
+<li><p>Each dataset must have at least one tag. Typically, a dataset has two to five tags.</p></li>
+<li><p>If coming from a City of Detroit department, a tag for the department must be used. The department tag should be formatted according to department naming standard. For example, if available, use the acronym, otherwise, use the short name.</p></li>
+<li><p>“Detroit” tags are not necessary and do not contribute to the findability of datasets in the ODP.</p></li>
+<li><p>Datasets that should be associated with one of the top-level categories that appear on the ODP home page should be tagged with the Category Tag used to generate the list of datasets associated with that category. Category tags are listed in Categories Table below.</p></li>
+</ul>
+</section>
+<section id="categories" class="level2">
+<h2 class="anchored" data-anchor-id="categories">Categories</h2>
+<p>Most datasets should be assigned at least one category. Categories are assigned by including a tag associated with a category in a dataset’s “Tags” metadata field. Note: If a category tag is applied to a resource, that resource will be placed in the associated category.</p>
+<table class="table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 80%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Category</strong></th>
+<th><strong>Scope and Examples</strong></th>
+<th><strong>Tag(s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Government</td>
+<td>Internal operations that support city governance and administration. Includes City budgets, human resources, and data from independent administrative and oversight units such as the Offices of the Auditor General (OAG), Inspector General (OIG), and Ombudsman.</td>
+<td>government</td>
+</tr>
+<tr class="even">
+<td>Public Safety</td>
+<td>Activities and resources that contribute to the peace and safety of people in the city. Examples include data from DPD and DFD. If a dataset pertains specifically to physical or mental health, use the more specific category Public Health.</td>
+<td>public safety</td>
+</tr>
+<tr class="odd">
+<td>Property &amp; Parcels</td>
+<td>Describe the built environment, land, and other physical resources in the City, especially in the contexts of property ownership and maintenance. Examples include building inspections, demolitions, parcel lines.</td>
+<td>property</td>
+</tr>
+<tr class="even">
+<td>Education</td>
+<td>Educational programing and resources. Includes early childhood, K12, post-secondary, and adult career development as well as resources for less formal educational opportunities such as libraries.</td>
+<td>education</td>
+</tr>
+<tr class="odd">
+<td>Transportation</td>
+<td>Transportation and mobility resources and services. Includes mobility related data on City transportation services (DDOT, paratransit), road maintenance and streetscaping, parking, e-scooter use.</td>
+<td>Transportation, mobility</td>
+</tr>
+<tr class="even">
+<td>Public Health</td>
+<td>Programs, services, and studies supporting the health of City residents as well as programs promoting healthy lifestyles. Examples include DHD programs and services and water quality reports from DWSD.</td>
+<td>health</td>
+</tr>
+<tr class="odd">
+<td>Areas &amp; Boundaries</td>
+<td>Districts, precincts, parcels, and other formal divisions of space in the City. These datasets include features map makers often refer to as shapes or polygons.</td>
+<td>boundary</td>
+</tr>
+<tr class="even">
+<td>Licenses, Permits, &amp; Certifications</td>
+<td>Activities and resources associated with what the City has authorized private entities to do. Includes special event permits, business licenses, and building certificates of compliance.</td>
+<td>permits</td>
+</tr>
+<tr class="odd">
+<td>Housing</td>
+<td>Residential buildings and related programs.</td>
+<td>housing</td>
+</tr>
+<tr class="even">
+<td>Jobs &amp; Economy</td>
+<td>City programming that encourages economic development, supports small business owners, and promotes economic opportunities for Detroit residents.</td>
+<td>jobs, economy</td>
+</tr>
+<tr class="odd">
+<td>Parks &amp; Recreation</td>
+<td>Recreational opportunities, programing, and infrastructure supporting that programming such as recreational facilities, greenways, and parks.</td>
+<td>parks, recreation</td>
+</tr>
+<tr class="even">
+<td>Arts &amp; Culture</td>
+<td>Programs and facilities related to the arts, libraries, museums, and public history. Includes public art locations, community art events and classes, and sponsored festivals, exhibitions and fellowships.</td>
+<td>arts</td>
+</tr>
+<tr class="odd">
+<td>Environment</td>
+<td>Programs and activities related to the natural environment or environmental sustainability. Also includes ecological and natural environment inventories and studies. Examples include water drainage studies, tree planting programs, canopy coverage, and mowing schedules.</td>
+<td>environment, climate</td>
+</tr>
+<tr class="even">
+<td>Equity &amp; Inclusion</td>
+<td>City programming and initiatives that highlight or promote diversity, equity, and inclusion.</td>
+<td>equity</td>
+</tr>
+</tbody>
+</table>
+<section id="candidate-categories" class="level3">
+<h3 class="anchored" data-anchor-id="candidate-categories">Candidate Categories</h3>
+<p>These categories are under consideration and may be promoted to a top-level category if use and data resources warrant doing so. If applicable, candidate category tags should be applied in addition to a primary category tag.</p>
+<table class="table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 83%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Category</strong></th>
+<th><strong>Scope and Examples</strong></th>
+<th><strong>Tag(s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Events &amp; Programming</td>
+<td>Community engagement events and programming.</td>
+<td>event, community</td>
+</tr>
+<tr class="even">
+<td>Utilities &amp; Infrastructure</td>
+<td>Foundational infrastructure and services such as lighting, water conduits, and recycling and waste collection facilities and services. If a dataset pertains specifically to transportation or mobility, use the more specific category Transportation.</td>
+<td>utilities</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="field-level-metadata" class="level2">
+<h2 class="anchored" data-anchor-id="field-level-metadata">Field-level Metadata</h2>
+<section id="field-name" class="level3">
+<h3 class="anchored" data-anchor-id="field-name">Field Name</h3>
+<p>The field name is the name of a column, or field, in the underlying data table. For details, see “Field Name” in the Naming Datasets and Fields section of this document.</p>
+</section>
+<section id="field-label" class="level3">
+<h3 class="anchored" data-anchor-id="field-label">Field Label</h3>
+<p>The “Field Alias” metadata field enables us to display a user-friendly field label for a data column in AGO and ODP maps and data table views. A field label should concisely convey the meaning of the data values contained in the column. A field label should be informative and enhance usability. If a Field Alias is not indicated, the field name from the underlying data table is displayed.</p>
+<ul>
+<li><p>Allows for spaces and most special characters: Avoid percent signs (%) and use spaces between words.</p></li>
+<li><p>Title Case should be used: Major words should be capitalized.</p></li>
+<li><p>Generally pervasive abbreviations should be used. For example, use “Address ID”, not “Address Identifier”.</p></li>
+<li><p>The descriptive purpose and usability should determine the length of a field label. Most field labels are 30 characters or less. Open data portal systems support up to 255 characters.</p>
+<ul>
+<li>The length of the field label is a primary determinant of column width in data table views displayed on the ODP.</li>
+</ul></li>
+</ul>
+</section>
+<section id="recurring-field-labels" class="level3">
+<h3 class="anchored" data-anchor-id="recurring-field-labels">Recurring Field Labels</h3>
+<p>Recurring field names with agreed upon spelling, formatting, and field labels will be established and maintained in the data catalog. Field labels in Table X will be included in that resource. Recurring fields that have reserved field labels and names are listed in the table along with examples of examples of corresponding data values.</p>
+<table class="table">
+<caption>Reserved field labels and field names, with examples of corresponding data values</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Field Label</th>
+<th style="text-align: left;">Field Name</th>
+<th style="text-align: left;">Examples</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Address</td>
+<td style="text-align: left;">address</td>
+<td style="text-align: left;">2 Woodward Ave.; 11740 E Jefferson Ave</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Street Number</td>
+<td style="text-align: left;">street_number</td>
+<td style="text-align: left;">2; 11740</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Street Prefix</td>
+<td style="text-align: left;">street_prefix</td>
+<td style="text-align: left;">N; E; S; W</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Street Name</td>
+<td style="text-align: left;">street_name</td>
+<td style="text-align: left;">Woodward; Jefferson; Gratiot; Grand River</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Street Type</td>
+<td style="text-align: left;">street_type</td>
+<td style="text-align: left;">Dr.; Ave.; St.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Unit Type</td>
+<td style="text-align: left;">unit_type</td>
+<td style="text-align: left;">Apt, Unit; Ste</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Unit Number</td>
+<td style="text-align: left;">unit_number</td>
+<td style="text-align: left;">202; A; Upper; S608</td>
+<td style="text-align: left;">Mailing address form of the unit identifier.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Parcel Number</td>
+<td style="text-align: left;">parcel_id</td>
+<td style="text-align: left;">01004068-85; 21000422.</td>
+<td style="text-align: left;">Alphanumeric identifier that may include a decimal point and/or hyphen</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Address ID</td>
+<td style="text-align: left;">address_id</td>
+<td style="text-align: left;">361652; 339,692</td>
+<td style="text-align: left;">Numeric identifier of varying length. Comma separator often displayed in ODP</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Building ID</td>
+<td style="text-align: left;">building_id</td>
+<td style="text-align: left;">653; 95746</td>
+<td style="text-align: left;">Numeric identifier of varying length. Comma separator often displayed in ODP</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Street ID</td>
+<td style="text-align: left;">street_id</td>
+<td style="text-align: left;">34,747; 23575</td>
+<td style="text-align: left;">Numeric identifier of varying length. Comma separator often displayed in ODP</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Unit ID</td>
+<td style="text-align: left;">unit_id</td>
+<td style="text-align: left;">5,813, 256822</td>
+<td style="text-align: left;">Numeric identifier of varying length. Comma separator often displayed in ODP</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Zip Code</td>
+<td style="text-align: left;">zip_code</td>
+<td style="text-align: left;">48226; 48214</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Neighborhood</td>
+<td style="text-align: left;">neighborhood</td>
+<td style="text-align: left;">Downtown; Jefferson Chalmers</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Council District</td>
+<td style="text-align: left;">council_district</td>
+<td style="text-align: left;">1; 2; 3; 4; 5; 6; 7</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">(Police) Precinct</td>
+<td style="text-align: left;">police_precinct</td>
+<td style="text-align: left;">02; 03; 04; 05; 06; 07; 08; 09; 10; 11; 12</td>
+<td style="text-align: left;">Leading zero may be omitted. “Police” may be dropped from DPD dataset labels.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">(Fire) Battalion</td>
+<td style="text-align: left;">fire_battalion</td>
+<td style="text-align: left;">01; 02; 03; 04; 05; 06; 07; 08; HPFD; HTFD</td>
+<td style="text-align: left;">Leading zero may be omitted. “Fire” may be dropped from DFD dataset labels.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">latitude</td>
+<td style="text-align: left;">-82.96674073</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">longitude</td>
+<td style="text-align: left;">42.36821293</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="field-description" class="level3">
+<h3 class="anchored" data-anchor-id="field-description">Field Description</h3>
+<p>A complete and informative field description should be provided for every field. The “Field Description” should go beyond restating the field name and provide enough information so that potential users can knowledgably analyze, interpret, and otherwise use and make decisions based on the data. When writing field descriptions, follow the criteria below. <strong>Audience level: Specialized</strong>.</p>
+<ul>
+<li><p>Clearly explain the data values contained in the field. Use technical terms if needed.</p></li>
+<li><p>If needed, explain how the information in the field is related to other dataset fields.</p></li>
+<li><p>Expand any acronyms and uncommon abbreviations used in the field name and clearly communicate the meaning of technical terms.</p></li>
+<li><p>Specify unique characteristics or limitations associated with field values. This could include technical and formatting constraints, ranges, or other relevant details.</p></li>
+<li><p>If field values are based on a data standard or controlled vocabulary, point users to information about the resource.</p></li>
+<li><p>Ensure field descriptions do not exceed 500 characters.</p></li>
+</ul>
+</section>
+</section>
+<section id="field-value-type" class="level2">
+<h2 class="anchored" data-anchor-id="field-value-type">Field value type</h2>
+<p>For each field, one of fifteen field value types can be selected (see table below, whichi was Modified from the <a href="https://doc.arcgis.com/en/arcgis-online/manage-data/describe-fields.htm#:~:text=configuring%20pop%2Dups.-,Field%20value%20types,-The%20following%20table">Esri Field Value table</a>). The icon displayed for a field in AGO and ODP attribute metadata views is determined by the field value type. The field value type should be thought of as a categorical description of the data values rather than a “data type” in the stricter sense. Selecting a field value type does not alter the underlying data table.</p>
+<table class="table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 61%">
+<col style="width: 32%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Field value type</strong></td>
+<td><strong>Field value or feature characteristics</strong></td>
+<td><strong>Example ODP Fields</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Name or Title</strong></td>
+<td>Text that represents a name, title, label, or keyword for each feature.</td>
+<td><p>Business name</p>
+<p>Structure name</p></td>
+</tr>
+<tr class="odd">
+<td><strong>Description</strong></td>
+<td>Text that provides a longer description of the feature, more than just a name or title.</td>
+<td><p>Violation Description</p>
+<p>URL to primary document or record</p></td>
+</tr>
+<tr class="even">
+<td><strong>Type or Category</strong></td>
+<td>Field values represent types or categories that group features based on a common characteristic; for example, soil type, zoning code, species, or asset type.</td>
+<td><p>Payment status (when &gt;= 3 values possible)</p>
+<p>Property class or use code</p>
+<p>Inspection type</p>
+<p>Fields that use coding or category systems</p></td>
+</tr>
+<tr class="odd">
+<td><strong>Count or Amount</strong></td>
+<td>Integers (no decimal) that represent the quantity of a specific attribute.</td>
+<td>Violation Count</td>
+</tr>
+<tr class="even">
+<td><strong>Percentage or Ratio</strong></td>
+<td>Number values in this field reflect the relationship between different quantities; for example, the ratio between the number of males and females.</td>
+<td>Property Transfer Percentage</td>
+</tr>
+<tr class="odd">
+<td><strong>Measurement</strong></td>
+<td>A number that reflects a characteristic that you can precisely measure. This may also be where fields that may have fallen under count or amount go if they have a decimal.</td>
+<td><p>Floor area</p>
+<p>Acreage</p>
+<p>(Building) Stories</p>
+<p>Duration</p></td>
+</tr>
+<tr class="even">
+<td><strong>Currency</strong></td>
+<td>A number that represents monetary values.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Unique Identifier</strong></td>
+<td><p>The values in this field are used to positively distinguish one feature or entity from another. For example, an assessor’s parcel number, a membership ID, or an invoice number.</p>
+<p>A value is a unique identifier if it uniquely identifies a specific entity.</p>
+<p>Each value per entity must be unique, but that does not necessarily mean all the values in this field will be unique for the layer.</p></td>
+<td><p>Note: Some Unique Identifiers are reserved. Fields with the labels listed below must reference Official Detroit Base Units or Office of the Assessor:</p>
+<ul>
+<li><p>Parcel Number |</p></li>
+<li><p>Address ID |</p></li>
+<li><p>Building ID |</p></li>
+<li><p>Street ID |</p></li>
+<li><p>Unit ID |</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Phone Number</strong></td>
+<td>This field stores phone numbers.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Email Address</strong></td>
+<td>This field stores email address strings.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Ordered or Ranked</strong></td>
+<td>The values in this field represent a feature’s status in an ordered or ranked list. For example, a feature could be one of the following: | Vault Size | - Small, medium, or large | | | - First, second, third, or fourth | | | - Informational, warning, error, or failure | |</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Binary</strong></td>
+<td>Only one of two values are possible for each feature.</td>
+<td>Collection Status Flag</td>
+</tr>
+<tr class="even">
+<td><strong>Location or Place Name</strong></td>
+<td>Values in this field represent a geographic location.</td>
+<td><p>Street Address</p>
+<p>Postal Code</p>
+<p>City</p>
+<p>Precinct</p>
+<p>Council District</p>
+<p>Neighborhood</p></td>
+</tr>
+<tr class="odd">
+<td><strong>Coordinate</strong></td>
+<td>These fields store a geographic coordinate value.</td>
+<td><p>Latitude</p>
+<p>Longitude</p></td>
+</tr>
+<tr class="even">
+<td><strong>Date and Time</strong></td>
+<td>Values in this field store explicit dates and times or date references such as days of the week, months, or years.</td>
+<td><p>Sale Date</p>
+<p>Hearing Time</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>City of Detroit. (n.d.). <em>Open Data Portal Personas</em>. Detroit Open Data Portal. <a href="https://data.detroitmi.gov/pages/personas" class="uri">https://data.detroitmi.gov/pages/personas</a></p>
+<p>Laubheimer, P. (2022, April 3). <em>Data tables: Four major user tasks</em>. Nielsen Norman Group. <a href="https://www.nngroup.com/articles/data-tables/" class="uri">https://www.nngroup.com/articles/data-tables/</a></p>
+<p>Riederer, E. (2020, Sept.&nbsp;6). <em>Column names as contracts</em>. Emily Riederer. <a href="https://emilyriederer.netlify.app/post/column-name-contracts/" class="uri">https://emilyriederer.netlify.app/post/column-name-contracts/</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

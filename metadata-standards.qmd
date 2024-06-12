@@ -1,0 +1,109 @@
+---
+title: "Metadata Standards"
+---
+
+# Introduction
+
+The City of Detroit creates metadata for datasets published to the Open Data Portal to help people discover, use and interpret data we produce and collect. Where available, we have adopted widely used and published standards to help ensure metadata can be used and shared across information systems used by the City and external systems and services such as Data.gov and Internet search engines. Metadata specified by this standard are divided into two sections that correspond to two related but distinct types of metadata records, Dataset records and Data Dictionaries. The Dataset metadata record contains metadata used to describe a dataset as a whole; and the Data Dictionary, which is used to describe the individual fields and field values within a dataset.
+
+# Background
+
+Metadata is structured information that describes a resource at a level intended to help people understand what a resource contains and how it might be used. Metadata that describe datasets should allow people to easily find and reuse data and are essential components of any dataset. Often, metadata will be the first aspect of a dataset that a person encounters. For example, when a person searches a system such as Detroit's Open Data Portal, Data.gov, or Google Dataset Search, metadata fields such as dataset names and descriptions are presented in a list of search results that the user can review and act on. Based on the information communicated through metadata fields, that user should be able to evaluate whether the dataset fits their needs and interests. When using or evaluating a dataset at a greater level of detail, metadata in a data dictionary is essential. A data dictionary is critical when a user or potential user of that data needs to understand what is represented in the individual fields (also known as columns, variables, or attributes) in the dataset. Metadata at this level of description explains what the field names and values included in those fields actually mean.
+
+In addition to metadata content, its syntax -- or how it is structured -- is also important, especially in the context of the computer systems in which it is recorded and shared. Through use of specified, standard metadata structures, computer systems can be programmed to present metadata to users in predictable and meaningful ways. Similarly, these specified, standard metadata structures, which form one facet of metadata standards, can be transferred between systems along with the datasets described such that the data -- and metadata -- can be used and reused in novel ways or contexts.
+
+Selection and development of the City of Detroit Metadata Standards for Open Data have been informed by knowledge of the audiences we serve, systems we use, and practices across the broader community of local government organizations that publish open data. Primary audiences for open datasets and the metadata that describes them include residents and staff of the City of Detroit, journalists, and staff at businesses and non-government organizations.
+
+## Types of Metadata Records
+
+Metadata may be grouped into four levels of records that correspond with how datasets are curated and shared: Catalog records, Dataset records, Distribution records, and Data Dictionaries.
+
+-   **Catalog records** group together dataset records and contain a high-level technical description of the collection of datasets as a whole. Through ArcGIS Online (AGO), for example, there is a catalog record with an entry for each and every dataset available through the Open Data Portal.
+
+<!-- -->
+
+-   **Dataset records** are used to describe each dataset as a whole. They contain information such as title, keywords, a narrative description, and the spatial and temporal scope of data included in the dataset. Dataset records are nested in catalogs.
+
+<!-- -->
+
+-   **Distribution records** describe files and APIs through which the public can access and obtain copies of datasets. Data distribution records are nested inside dataset records.
+
+-   **Data dictionaries** describe individual data fields (i.e., columns or variables) that comprise a dataset. Data dictionaries are linked to dataset records.
+
+Typically, metadata in Catalog and Distribution records are created programmatically by DSA staff and the systems we license or implement. Metadata in Dataset records and Data dictionaries incorporate information from a broader set of sources. These records are individually curated and include departmental knowledge shared by data stewards and other departmental experts.
+
+### Systems and Published Standards
+
+Esri ArcGIS products are essential to data workflows within the City, and it is essential that our metadata is compatible with these systems. Compatibility with these systems also enables us to ensure our metadata is available to our local audiences that rely on Esri systems to discover and access our data. Based on our goals to ensure our data -- and metadata -- can be discovered and used by broader, more disparate audiences, Data.gov, the U.S. Government's open data portal has informed our metadata standards. According to these interests, two metadata standards developed and published by the International Organization for Standardization (ISO) that are supported by Esri, and the data catalog application profile used by Data.gov form the basis for our Catalog, Dataset, and Distribution-level metadata records. These standards are:
+
+-   ISO 19115: 2014, Geographic information -- Metadata
+
+-   ISO 19139, Geographic information --- Metadata --- XML schema implementation
+
+-   [DCAT-US Schema v1.1 (Project Open Data Metadata Schema)](https://resources.data.gov/resources/dcat-us/)
+
+Currently, there are not formal, widely used published standards for data dictionaries. Data dictionary elements identified for the City of Detroit standards are informed by best practices and guidance materials produced by the open government data and cognate communities (e.g., Kononow, 2017; New York City Open Data, 2022; Open Science Foundation, 2022; SCOPE Metadata Group, 2014).
+
+# Scope
+
+This data standard applies to datasets published to the Open Data Portal (ODP). Metadata at the dataset level and a data dictionary must accompany datasets published or submitted for publication to the ODP. Catalog and Distribution-level datasets are created and managed programmatically and are therefore have been referenced but are not described in-depth by this standard. Similarly, specifications used to format City of Detroit metadata in XML and JSON are beyond the scope of this standard.
+
+# Data Elements
+
+Table I, Dataset Metadata Elements and Table II, Data Dictionary Elements define the properties of the metadata fields included in this Data Standard. The 'When to use' column in these tables indicates whether the field is required, conditional, optional or deferred based on the definitions:
+
+-   ***Required***: The element is essential and must be recorded.
+
+-   ***Conditional:*** If applicable, the element must be recorded. Conditional elements should be left blank if not applicable to the given context.
+
+-   ***Optional:*** Though useful and applicable in at least some contexts, optional elements are not essential to interpreting the dataset or its values. Optional items should be recorded if important to the context.
+
+-   ***Deferred:*** Some elements have not yet been implemented. Clarifying details and instructions for specifying deferred elements will be provided in future iterations of this data standard.
+
+## Dataset Record Metadata Elements
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(DT)
+library(readr)
+
+
+t1_dataset_metadata <- read_csv("data/standard_t1_Dataset_Record_Metadata_Elements.csv")
+
+datatable(t1_dataset_metadata, filter = 'top', options = list(dom = 'tipr',
+  pageLength = 20, autoWidth = TRUE))
+```
+
+### Data Dictionary Metadata Elements
+
+The Detroit Open Data system accommodates and displays four metadata fields for each data field or column in a dataset, a *Field label*, *Field name*, *Description*, and *Field value type*. This Metadata Standard specifies six additional metadata fields that may be needed to describe data fields more thoroughly. For more complete field descriptions, use the additional metadata fields when applicable and accommodated by the data dictionary systems and technologies used.
+
+```{r}
+#| echo: false
+#| warning: false
+
+
+t2_field_metadata <- read_csv("data/standard_t2_data_dictionary_metadata_elements.csv")
+
+datatable(t2_field_metadata, filter = 'top', options = list(dom = 'tipr',
+  pageLength = 5, autoWidth = TRUE))
+```
+
+
+## References
+
+City of Detroit (2021). Data governance plan. City of Detroit Data Governance Plan. See [Google Doc](https://docs.google.com/document/d/1o6WdvrVDN2Rpw4Ke9pM95T9iRaOWKUnynu0WJv7OTp0/)
+
+IANA (Internat Assigned Numbers Authority; 2023, January 18). Media type. <http://www.iana.org/assignments/media-types/media-types.xhtml>
+
+\"Media type\" (2022, Dec 30). Wikipedia. <https://en.wikipedia.org/wiki/Media_type>
+
+Kononow, P. (2017, Aug 29). Captain Obvious\' guide to column descriptions: Data dictionary best practices. Dataedo website. <https://dataedo.com/blog/captain-obivous-guide-to-column-descriptions-data-dictionary-best-practices>
+
+New York City Open Data (2022). Data coordinators: Open data dictionary template. <https://opendata.cityofnewyork.us/open-data-coordinators/>
+
+Open Science Foundation (OSF; 2022). OSF Support: How to make a data dictionary. <https://help.osf.io/article/217-how-to-make-a-data-dictionary>
+
+SCOPE (Statistical Community of Practice and Engagement) Metadata Group (2014). Metadata Schema for Data Dictionaries. <https://github.com/USG-SCOPE>
