@@ -70,18 +70,11 @@
     "text": "References\nCity of Detroit. (n.d.). Open Data Portal Personas. Detroit Open Data Portal. https://data.detroitmi.gov/pages/personas\nLaubheimer, P. (2022, April 3). Data tables: Four major user tasks. Nielsen Norman Group. https://www.nngroup.com/articles/data-tables/\nRiederer, E. (2020, Sept. 6). Column names as contracts. Emily Riederer. https://emilyriederer.netlify.app/post/column-name-contracts/"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "index_orig.html",
+    "href": "index_orig.html",
     "title": "Overview",
     "section": "",
     "text": "The City of Detroit creates metadata for datasets published to the Open Data Portal to help people discover, use and interpret data we produce and collect. Where available, we have adopted widely used and published standards to help ensure metadata can be used and shared across information systems used by the City and external systems and services such as Data.gov and Internet search engines.\nThere are four types of metadata records for open data sets: Catalog records, Data set records, Distribution records, and Data Dictionaries.\n\nCatalog records group together data set records and contain a high level technical description of the collection of data sets as a whole. Through ArcGIS Online (AGO), for example, there is a catalog record with an entry for each and every data set available through the Open Data Portal.\nData set records are used to describe each data set as a whole. They contain information such as title, keywords, a narrative description, and the spatial and temporal scope of data included in the data set. Data set records are nested in catalogs.\nDistribution records describe files and APIs through which the public can access and obtain copies of data sets. Data distribution records are nested inside data set records.\nData dictionaries describe individual data fields (i.e., columns or variables) that comprise a data set. Data dictionaries are linked to data set records.\n\nTypically, most of the metadata in catalog and distribution records are created programmatically by DSA staff and the systems we license or implement. Metadata in data set records and data dictionaries incorporate information from a broader set of sources. These records are individually curated and include departmental knowledge shared by data stewards and other departmental experts."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "dataset-style.html",
@@ -131,6 +124,20 @@
     "title": "Dataset Style",
     "section": "Reserved identifier field names",
     "text": "Reserved identifier field names\nThe following field names must reference Official Detroit Base Units or Office of the Assessor Parcel IDs and should not be used as names for other fields.\n\naddress_id\nbuilding_id\nparcel_id\nstreet_id\nunit_id"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Documents",
+    "section": "",
+    "text": "Metadata Standards\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDataset Style\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata Style\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "metadata-standards.html",

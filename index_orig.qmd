@@ -1,0 +1,17 @@
+---
+title: "Overview"
+---
+
+The City of Detroit creates metadata for datasets published to the Open Data Portal to help people discover, use and interpret data we produce and collect. Where available, we have adopted widely used and published standards to help ensure metadata can be used and shared across information systems used by the City and external systems and services such as Data.gov and Internet search engines.
+
+There are four types of metadata records for open data sets: Catalog records, Data set records, Distribution records, and Data Dictionaries.
+
+-   **Catalog** records group together data set records and contain a high level technical description of the collection of data sets as a whole. Through ArcGIS Online (AGO), for example, there is a catalog record with an entry for each and every data set available through the Open Data Portal.
+
+-   **Data set** records are used to describe each data set as a whole. They contain information such as title, keywords, a narrative description, and the spatial and temporal scope of data included in the data set. Data set records are nested in catalogs.
+
+-   **Distribution** records describe files and APIs through which the public can access and obtain copies of data sets. Data distribution records are nested inside data set records.
+
+-   **Data dictionaries** describe individual data fields (i.e., columns or variables) that comprise a data set. Data dictionaries are linked to data set records.
+
+Typically, most of the metadata in catalog and distribution records are created programmatically by DSA staff and the systems we license or implement. Metadata in data set records and data dictionaries incorporate information from a broader set of sources. These records are individually curated and include departmental knowledge shared by data stewards and other departmental experts.

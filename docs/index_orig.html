@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ODP Style &amp; Standards (Draft) - Documents</title>
+<title>ODP Style &amp; Standards (Draft) - Overview</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -61,38 +59,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -115,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -149,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Documents</h1>
+<h1 class="title">Overview</h1>
 </div>
 
 
@@ -164,77 +131,19 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>The City of Detroit creates metadata for datasets published to the Open Data Portal to help people discover, use and interpret data we produce and collect. Where available, we have adopted widely used and published standards to help ensure metadata can be used and shared across information systems used by the City and external systems and services such as Data.gov and Internet search engines.</p>
+<p>There are four types of metadata records for open data sets: Catalog records, Data set records, Distribution records, and Data Dictionaries.</p>
+<ul>
+<li><p><strong>Catalog</strong> records group together data set records and contain a high level technical description of the collection of data sets as a whole. Through ArcGIS Online (AGO), for example, there is a catalog record with an entry for each and every data set available through the Open Data Portal.</p></li>
+<li><p><strong>Data set</strong> records are used to describe each data set as a whole. They contain information such as title, keywords, a narrative description, and the spatial and temporal scope of data included in the data set. Data set records are nested in catalogs.</p></li>
+<li><p><strong>Distribution</strong> records describe files and APIs through which the public can access and obtain copies of data sets. Data distribution records are nested inside data set records.</p></li>
+<li><p><strong>Data dictionaries</strong> describe individual data fields (i.e., columns or variables) that comprise a data set. Data dictionaries are linked to data set records.</p></li>
+</ul>
+<p>Typically, most of the metadata in catalog and distribution records are created programmatically by DSA staff and the systems we license or implement. Metadata in data set records and data dictionaries incorporate information from a broader set of sources. These records are individually curated and include departmental knowledge shared by data stewards and other departmental experts.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1718208588600" data-listing-reading-time-sort="7">
-<a href="./metadata-standards.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Metadata Standards
-</h5>
-<div class="card-text listing-description">
-The City of Detroit creates metadata for datasets published to the Open Data Portal to help people discover, use and interpret data we produce and collect. Where available…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1717439493823" data-listing-reading-time-sort="13">
-<a href="./dataset-style.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Dataset Style
-</h5>
-<div class="card-text listing-description">
-The Detroit Open Data Portal (ODP) is the primary gateway to current City of Detroit data that can be accessed through maps, data tables, dashboards, and applications…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1718215570361" data-listing-reading-time-sort="145">
-<a href="./metadata-style.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Metadata Style
-</h5>
-<div class="card-text listing-description">
-Metadata helps users find, use, and draw valid conclusions from data. Ensuring important details, such as titles, descriptions, and data sources, are consistently and…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
