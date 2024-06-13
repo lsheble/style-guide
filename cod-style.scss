@@ -31,18 +31,20 @@ $pantone-grey: #b4b4b4 !default;
 $green-pigment: #008E40 !default;
 $punch:         #D72929 !default;
 $white:         #FFFFFF !default;
+$early-dawn:    #FFF5DC !default;
+$cupcake:    #EBF6F7 !default;
 // scss-docs-end color-variables
 
 
 
 // Base document colors
-$navbar-bg: $city-green; // navbar
-$navbar-fg: $white; // navbar foreground elements
-$navbar-hl: $dandelion-wish; // highlight color when hovering over navbar links
+$navbar-bg: $light-grey; // navbar
+$navbar-fg: $near-black; // navbar foreground elements
+$navbar-hl: $city-green; // highlight color when hovering over navbar links
 $body-bg: $white; // page background 
 $body-color: $near-black; // page text 
 $footer-bg: $pale-green; // footer 
-$link-color: $spirit-green; // hyperlinks 
+$link-color: $city-green; // hyperlinks 
 $link-decoration: underline !default;
 
 

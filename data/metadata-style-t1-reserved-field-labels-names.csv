@@ -1,0 +1,20 @@
+﻿Field Label,Field Name,Examples,Notes
+Address,address,2 Woodward Ave.; 11740 E Jefferson Ave.,
+Street Number,street_number,2; 11740,
+Street Prefix,street_prefix,N; E; S; W,
+Street Name,street_name,Woodward; Jefferson; Gratiot; Grand River,
+Street Type,street_type,Dr.; Ave.; St.,
+Unit Type,unit_type,"Apt, Unit; Ste",
+Unit Number,unit_number,202; A; Upper; S608,Mailing address form of the unit identifier.
+Parcel Number,parcel_id,01004068-85; 21000422.,Alphanumeric identifier that may include a decimal point and/or hyphen
+Address ID,address_id,"361652; 339,692",Numeric identifier of varying length. Comma separator often displayed in ODP
+Building ID,building_id,653; 95746,Numeric identifier of varying length. Comma separator often displayed in ODP
+Street ID,street_id," 	34,747; 23575",Numeric identifier of varying length. Comma separator often displayed in ODP
+Unit ID,unit_id,"5,813, 256822",numeric identifier of varying length. Comma separator often displayed in ODP
+Zip Code,zip_code,48226; 48214,
+Neighborhood,neighborhood,Downtown; Jefferson Chalmers,
+Council District,council_district,1; 2; 3; 4; 5; 6; 7,
+Precinct,police_precinct,02; 03; 04; 05; 06; 07; 08; 09; 10; 11; 12,Leading zero may or may not be included.
+Fire Battalion,fire_battalion,01; 02; 03; 04; 05; 06; 07; 08; HPFD; HTFD,Leading zero may or may not be included.
+Latitude,latitude,-82.96674073,
+Longitude,longitude,42.36821293,
