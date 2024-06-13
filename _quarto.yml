@@ -7,7 +7,7 @@ website:
   navbar:
     search: true
     collapse: true
-    left:
+    right:
       - href: index.qmd
         text: Home
       - href: dataset-style.qmd
@@ -16,6 +16,12 @@ website:
         text: Metadata Style
       - href: metadata-standards.qmd
         text: Metadata Standards
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://github.com/lsheble/style-guide
+          - text: Report a Bug
+            href:  https://github.com/lsheble/style-guide/issues
 
 format:
   html:
