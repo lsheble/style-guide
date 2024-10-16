@@ -158,7 +158,14 @@
     "href": "metadata-standards.html#dataset-record-metadata-elements",
     "title": "Metadata Standards",
     "section": "Dataset Record Metadata Elements",
-    "text": "Dataset Record Metadata Elements\n\n\n\n\n\n\n\n\nData Dictionary Metadata Elements\nThe Detroit Open Data system accommodates and displays four metadata fields for each data field or column in a dataset, a Field label, Field name, Description, and Field value type. This Metadata Standard specifies six additional metadata fields that may be needed to describe data fields more thoroughly. For more complete field descriptions, use the additional metadata fields when applicable and accommodated by the data dictionary systems and technologies used."
+    "text": "Dataset Record Metadata Elements"
+  },
+  {
+    "objectID": "metadata-standards.html#data-dictionary-metadata-elements",
+    "href": "metadata-standards.html#data-dictionary-metadata-elements",
+    "title": "Metadata Standards",
+    "section": "Data Dictionary Metadata Elements",
+    "text": "Data Dictionary Metadata Elements\nThe Detroit Open Data system accommodates and displays four metadata fields for each data field or column in a dataset, a Field label, Field name, Description, and Field value type. This Metadata Standard specifies six additional metadata fields that may be needed to describe data fields more thoroughly. For more complete field descriptions, use the additional metadata fields when applicable and accommodated by the data dictionary systems and technologies used."
   },
   {
     "objectID": "metadata-standards.html#references",

@@ -76,7 +76,7 @@ datatable(t1_dataset_metadata, filter = 'top', options = list(dom = 'tipr',
   pageLength = 20, autoWidth = TRUE))
 ```
 
-### Data Dictionary Metadata Elements
+## Data Dictionary Metadata Elements
 
 The Detroit Open Data system accommodates and displays four metadata fields for each data field or column in a dataset, a *Field label*, *Field name*, *Description*, and *Field value type*. This Metadata Standard specifies six additional metadata fields that may be needed to describe data fields more thoroughly. For more complete field descriptions, use the additional metadata fields when applicable and accommodated by the data dictionary systems and technologies used.
 
