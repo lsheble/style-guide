@@ -40,6 +40,7 @@ reactable(
   pageSizeOptions = c(6, 12, 18),
   compact = TRUE,
   filterable = TRUE,
+  sortable = TRUE,
   highlight = TRUE,
   details = function(index) {
      if (!is.na(t1_dataset_cheatsheet$format_constraints[index])) {
