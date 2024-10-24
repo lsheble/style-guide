@@ -7,5 +7,5 @@ listing:
     - "metadata-style.qmd"
     - "metadata-standards.qmd"
   sort: false
-  type: grid
+  type: default
 ---
