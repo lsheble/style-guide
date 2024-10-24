@@ -2,9 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
-      "/metadata-standards.html",
+      "/metadata-quick-reference.html",
       "/dataset-style.html",
-      "/metadata-style.html"
+      "/metadata-style.html",
+      "/metadata-standards.html"
     ]
   }
 ]

@@ -2,9 +2,10 @@
 title: "Documents"
 listing:
   contents:
-    - "metadata-standards.qmd"
+    - "metadata-quick-reference.qmd"
     - "dataset-style.qmd"
     - "metadata-style.qmd"
+    - "metadata-standards.qmd"
   sort: false
   type: grid
 ---
