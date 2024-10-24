@@ -1,0 +1,70 @@
+---
+title: "Metadata Quick Reference"
+---
+
+
+## Dataset
+
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(reactable)
+library(readr)
+library(htmltools)
+library(DT)
+
+```
+
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: import-data-md-ref
+
+t1_dataset_cheatsheet <- read_csv("data/cheatsheet_t1_dataset_record.csv")
+```
+
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: table-md-ref
+
+reactable(
+  t1_dataset_cheatsheet,
+  class = "tbl-reactable",
+  defaultPageSize = 6,
+  showPageSizeOptions = TRUE,
+  pageSizeOptions = c(6, 12, 18),
+  compact = TRUE,
+  filterable = TRUE,
+  highlight = TRUE,
+  details = function(index) {
+     if (!is.na(t1_dataset_cheatsheet$format_constraints[index])) {
+       htmltools::div(style = "margin: 1.25rem",
+                      "ODP Format Constraints \n",
+                      htmltools::tags$pre(paste(t1_dataset_cheatsheet$format_constraints[index]))
+         )
+     }
+  },
+  columns = list(
+    name = colDef(
+      name = "Field Name",
+      maxWidth = 100,
+      html = TRUE,
+      cell = function(value, index){
+        if (!is.na(t1_dataset_cheatsheet$url[index])) {
+          sprintf('<a href="%s" target="_blank">%s</a>',t1_dataset_cheatsheet$url[index], value)
+        } else value
+        }),
+    url = colDef(show = FALSE),
+    section = colDef(show = FALSE),
+    description = colDef(name = "Field Description"),
+    use = colDef(name = "Use", maxWidth = 90),
+    use_notes = colDef(name = "Use Notes"),
+    format_constraints = colDef(show = FALSE)
+))
+```
+

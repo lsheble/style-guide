@@ -34,7 +34,7 @@ Text from a dataset's title, tags, summary, and description fields are searchabl
 
 ### Title
 
-The dataset name is the title of the dataset. For details, see "Dataset Name" in the Naming Datasets and Fields section of this document.  **Audience level: General.**
+The dataset name is the title of the dataset. For details, see "[Dataset Name](https://lsheble.github.io/style-guide/dataset-style.html#naming-datasets-and-fields)" in the [Dataset Style Guide](https://lsheble.github.io/style-guide/dataset-style.html). **Audience level: General.**
 
 ### Summary
 
@@ -66,9 +66,9 @@ Start the description with an overview of the dataset and the most important inf
 
 -   For geospatial datasets, the WGS84 (ESPG:4326) coordinate system is the default coordinate system for the ODP. Identify the coordinate system or projection if it differs from this standard.
 
-### References and links to related items.
+### References and links to related items
 
-In the ODP and AGO, we want to help people find resources that are closely related to a dataset. At this time, we are able to link to resources from the description. Please note and include links to the items listed below from the dataset description. In the future, these items may be displayed via their independent, specialized metadata fields.  
+In the ODP and AGO, we want to help people find resources that are closely related to a dataset. At this time, we are able to link to resources from the description. Please note and include links to the items listed below from the dataset description. In the future, these items may be displayed via their independent, specialized metadata fields.
 
 -   Current and Archived datasets. Corresponding current and archived datasets should reference and link to each other.
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ODP Style &amp; Standards (Draft) - Documents</title>
+<title>ODP Style &amp; Standards (Draft) - Metadata Quick Reference</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -61,38 +59,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
+<script src="site_libs/core-js-2.5.3/shim.min.js"></script>
+<script src="site_libs/react-18.2.0/react.min.js"></script>
+<script src="site_libs/react-18.2.0/react-dom.min.js"></script>
+<script src="site_libs/reactwidget-2.0.0/react-tools.js"></script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/reactable-0.4.4/reactable.css" rel="stylesheet">
+<script src="site_libs/reactable-binding-0.4.4/reactable.js"></script>
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -115,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -123,8 +99,8 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Dataset Style</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./metadata-quick-reference.html" rel="" target="">
- <span class="menu-text">Metadata Quick Reference</span></a>
+    <a class="nav-link active" href="./metadata-quick-reference.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Metadata Reference</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./metadata-style.html" rel="" target="">
@@ -163,14 +139,20 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link active" data-scroll-target="#dataset">Dataset</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Documents</h1>
+<h1 class="title">Metadata Quick Reference</h1>
 </div>
 
 
@@ -185,77 +167,20 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="dataset" class="level2">
+<h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="reactable html-widget html-fill-item" id="htmlwidget-b5cc3efd62d0ff3feae0" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b5cc3efd62d0ff3feae0">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"name":["Title","Summary","Description","Keywords (\"Tags\")","Category","Department of Origin","Data Steward Name","Data Steward contact email","Spatial coverage","Temporal coverage","Publication date","Frequency - publication","Frequency – data updates","Homepage","Reference: Name","Reference: URL","Data standard","Language"],"url":["https://lsheble.github.io/style-guide/metadata-style.html#title","https://lsheble.github.io/style-guide/metadata-style.html#summary","https://lsheble.github.io/style-guide/metadata-style.html#description","https://lsheble.github.io/style-guide/metadata-style.html#tags","https://lsheble.github.io/style-guide/metadata-style.html#categories","https://lsheble.github.io/style-guide/metadata-style.html#credits-attribution",null,null,null,null,null,"https://lsheble.github.io/style-guide/metadata-style.html#publishing-frequency",null,null,"https://lsheble.github.io/style-guide/metadata-style.html#references-and-links-to-related-items","https://lsheble.github.io/style-guide/metadata-style.html#references-and-links-to-related-items",null,null],"section":["#title","#summary","#description","#tags","#categories","#credits-attribution",null,null,null,null,null,"#publishing-frequency",null,null,"#references-and-links-to-related-items","#references-and-links-to-related-items",null,null],"description":["Human-readable name that describes the overall content of the dataset in plain English. Concise titles that avoid jargon and acronyms are preferred.","One or two sentence description that summarizes the scope and content of the dataset.","Human-readable summary or abstract of the dataset in plain English. Describe the scope and content of the dataset and by whom, how, and why data is collected.  As applicable, also include the name of the program and a link to the program webpage, data standard, and city ordinance or state law that mandates the collection or publication of the data.","Include department or source acronym, category keyword(s), and search keywords. Keywords or tags should include terms that would be used by technical and non-technical users.","One or more main thematic categories of the dataset. Datasets are assigned a category by tagging the dataset with a keyword associated with the category in the Keywords metadata field.","Name of the department, board, or other organizational unit that is the origin or source of the dataset . Specify the full department name followed by the acronym or short name in parantheses. Include all departments that contribute data to the dataset.","Name(s) of one or more data stewards responsible for managing the dataset on behalf of the organizational unit that is the source of the dataset. Names should be consistent with their listing in City Directories. In the case of multiple data stewards, names should be separated by a semicolon.","Email address for each data steward. In the case of multiple data stewards, email addresses should be listed in the same order that names are listed and separated by a semicolon.","The range of geographical or spatial applicability of a dataset. Could include a spatial region like a bounding box or a named place such as 'Detroit, MI'.","The range of temporal applicability of a dataset. May consist of  a start and end date or a specific time period such as a calendar or fiscal year that defines the scope of the dataset.","Date on which the dataset was first published to the ODP.","Frequency with which dataset updates are published.","Frequency with which dataset source records are updated based on department practices and policies.","URL for the homepage of the human-friendly hub or landing page for the specific dataset.","Name for supporting information such as a webpage that provides details about a program associated with the dataset.","URL for the resource indicated in Reference:Name, typically the primary webpage associated with a program that associated with the production of a dataset.","Name and link to any data standard the dataset conforms to or that  significantly defines the dataset structure or content.","The language of the dataset."],"use":["Required","Required","Required","Required","Optional","Required","Required","Required","Required","Required","Required","Required","Required","Required","Optional","Optional","Optional","Conditional"],"use_notes":["Specified before import to AGO, with dataset table creation. Changing title for ODP results in URL change.","Should differ from the first sentence of the Description. Featured in some ODP views and search result lists alone or immediately followed by the Dataset Description.","The dataset description is featured in some views and search result displays in the ODP.","See Category table for keywords associated with categories.","Category cards on the ODP main page are mapped to keywords. Datasets may be assigned to one or more categories by specifying the related keyword(s).","Displayed in 'Credits (Attribution)' section in AGO. Not displayed in ODP interface.","Shared within organization only.","Shared within organization only.","If the dataset includes addresses outside the City of Detroit, those addresses will not be geocoded using Detroit Base Units.","If the dataset will continue to be updated with data over time, enter \"Present\" for the end date value (e.g., 10/15/2021 - Present).","AGO generates on publication. Add to metadata record on publication to the ODP.","If ingested with a DAG, \"schedule\" noted in python script. Otherwise, consult with data publisher. Example values: Not updated; As needed; Annually; Quarterly; Weekly; Daily","For internal datasets, provided by department. Example values: Not updated; As needed; Annually; Quarterly; Weekly; Daily; Hourly; Continuously","AGO generates when dataset is first imported. Add to metadata record on publication to the ODP.","Include the name of the program and a link to the CoD (or other agency or organization) program webpage in the Dataset Description and Reference metadata fields.","Include the name of the program and a link to the CoD (or other agency or organization) program webpage in the Dataset Description and Reference metadata fields.","Include the name and a link to a data standard in the Description and Data Standard metadata fields if that standard is essential to the contents of the dataset.","Default is English. Specify if a different language."],"format_constraints":["Changing title for ODP results in URL change.","Plain Text field, maximum of 2048 characters.","Rich Text field, maximum of 65535 characters","List of up to 128 items",null,"Plain Text field",null,null,null,null,null,null,null,null,null,null,null,null]},"columns":[{"id":".details","name":"","type":null,"sortable":false,"resizable":false,"filterable":false,"searchable":false,"width":45,"align":"center","details":[{"name":"div","attribs":{"style":{"margin":"1.25rem"}},"children":["ODP Format Constraints \n",{"name":"pre","attribs":{},"children":["Changing title for ODP results in URL change."]}]},{"name":"div","attribs":{"style":{"margin":"1.25rem"}},"children":["ODP Format Constraints \n",{"name":"pre","attribs":{},"children":["Plain Text field, maximum of 2048 characters."]}]},{"name":"div","attribs":{"style":{"margin":"1.25rem"}},"children":["ODP Format Constraints \n",{"name":"pre","attribs":{},"children":["Rich Text field, maximum of 65535 characters"]}]},{"name":"div","attribs":{"style":{"margin":"1.25rem"}},"children":["ODP Format Constraints \n",{"name":"pre","attribs":{},"children":["List of up to 128 items"]}]},null,{"name":"div","attribs":{"style":{"margin":"1.25rem"}},"children":["ODP Format Constraints \n",{"name":"pre","attribs":{},"children":["Plain Text field"]}]},null,null,null,null,null,null,null,null,null,null,null,null]},{"id":"name","name":"Field Name","type":"character","cell":["<a href=\"https://lsheble.github.io/style-guide/metadata-style.html#title\" target=\"_blank\">Title<\/a>","<a href=\"https://lsheble.github.io/style-guide/metadata-style.html#summary\" target=\"_blank\">Summary<\/a>","<a href=\"https://lsheble.github.io/style-guide/metadata-style.html#description\" target=\"_blank\">Description<\/a>","<a href=\"https://lsheble.github.io/style-guide/metadata-style.html#tags\" target=\"_blank\">Keywords (\"Tags\")<\/a>","<a href=\"https://lsheble.github.io/style-guide/metadata-style.html#categories\" target=\"_blank\">Category<\/a>","<a href=\"https://lsheble.github.io/style-guide/metadata-style.html#credits-attribution\" target=\"_blank\">Department of Origin<\/a>","Data Steward Name","Data Steward contact email","Spatial coverage","Temporal coverage","Publication date","<a href=\"https://lsheble.github.io/style-guide/metadata-style.html#publishing-frequency\" target=\"_blank\">Frequency - publication<\/a>","Frequency – data updates","Homepage","<a href=\"https://lsheble.github.io/style-guide/metadata-style.html#references-and-links-to-related-items\" target=\"_blank\">Reference: Name<\/a>","<a href=\"https://lsheble.github.io/style-guide/metadata-style.html#references-and-links-to-related-items\" target=\"_blank\">Reference: URL<\/a>","Data standard","Language"],"html":true,"maxWidth":100},{"id":"url","name":"url","type":"character","show":false},{"id":"section","name":"section","type":"character","show":false},{"id":"description","name":"Field Description","type":"character"},{"id":"use","name":"Use","type":"character","maxWidth":90},{"id":"use_notes","name":"Use Notes","type":"character"},{"id":"format_constraints","name":"format_constraints","type":"character","show":false}],"filterable":true,"defaultPageSize":6,"showPageSizeOptions":true,"pageSizeOptions":[6,12,18],"highlight":true,"compact":true,"className":"tbl-reactable","dataKey":"8238aa2943602dcf5fed344af6139d4a"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1729091461602" data-listing-reading-time-sort="7">
-<a href="./metadata-standards.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Metadata Standards
-</h5>
-<div class="card-text listing-description">
-The City of Detroit creates metadata for datasets published to the Open Data Portal to help people discover, use and interpret data we produce and collect. Where available…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1717439493823" data-listing-reading-time-sort="13">
-<a href="./dataset-style.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Dataset Style
-</h5>
-<div class="card-text listing-description">
-The Detroit Open Data Portal (ODP) is the primary gateway to current City of Detroit data that can be accessed through maps, data tables, dashboards, and applications…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1729198501051" data-listing-reading-time-sort="145">
-<a href="./metadata-style.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Metadata Style
-</h5>
-<div class="card-text listing-description">
-Metadata helps users find, use, and draw valid conclusions from data. Ensuring important details, such as titles, descriptions, and data sources, are consistently and…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

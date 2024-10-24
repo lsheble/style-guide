@@ -41,9 +41,26 @@ main {
   padding: 0 4rem; }
   
 td {
-    font-family: "Roboto Condensed", sans-serif;}
+  font-family: "Roboto Condensed", sans-serif;}
     
-th {font-family: "Roboto Condensed", sans-serif;}
+th {
+  font-family: "Roboto Condensed", sans-serif;}
+
+
+pre {
+  background-color: #F2F2F2;}
+
+.tbl-reactable {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.tbl-detail {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.tbl-row:hover {
+  background-color: #f5f8ff;
+}
 
 /* .navcolor{background-color: #004445;
   
