@@ -1,5 +1,7 @@
 ---
 title: "Metadata Reference"
+description: "Summary guide and index to dataset-level metadata requirements."
+file-modified:
 ---
 
 

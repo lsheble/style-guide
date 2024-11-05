@@ -1,5 +1,7 @@
 ---
 title: "Metadata Style"
+description: "Detailed guide to dataset and field-level metadata provided for ODP data."
+file-modified: 
 ---
 
 Metadata helps users find, use, and draw valid conclusions from data. Ensuring important details, such as titles, descriptions, and data sources, are consistently and comprehensively documented will enable users to make more informed decisions when accessing and using data. Descriptive information relevant to the dataset as a whole should be included in dataset-level metadata, and that specific to a field, field-level metadata.

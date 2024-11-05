@@ -70,11 +70,18 @@
     "text": "References\nCity of Detroit. (n.d.). Open Data Portal Personas. Detroit Open Data Portal. https://data.detroitmi.gov/pages/personas\nLaubheimer, P. (2022, April 3). Data tables: Four major user tasks. Nielsen Norman Group. https://www.nngroup.com/articles/data-tables/\nRiederer, E. (2020, Sept. 6). Column names as contracts. Emily Riederer. https://emilyriederer.netlify.app/post/column-name-contracts/"
   },
   {
-    "objectID": "index_orig.html",
-    "href": "index_orig.html",
-    "title": "Overview",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Documents",
     "section": "",
-    "text": "The City of Detroit creates metadata for datasets published to the Open Data Portal to help people discover, use and interpret data we produce and collect. Where available, we have adopted widely used and published standards to help ensure metadata can be used and shared across information systems used by the City and external systems and services such as Data.gov and Internet search engines.\nThere are four types of metadata records for open data sets: Catalog records, Data set records, Distribution records, and Data Dictionaries.\n\nCatalog records group together data set records and contain a high level technical description of the collection of data sets as a whole. Through ArcGIS Online (AGO), for example, there is a catalog record with an entry for each and every data set available through the Open Data Portal.\nData set records are used to describe each data set as a whole. They contain information such as title, keywords, a narrative description, and the spatial and temporal scope of data included in the data set. Data set records are nested in catalogs.\nDistribution records describe files and APIs through which the public can access and obtain copies of data sets. Data distribution records are nested inside data set records.\nData dictionaries describe individual data fields (i.e., columns or variables) that comprise a data set. Data dictionaries are linked to data set records.\n\nTypically, most of the metadata in catalog and distribution records are created programmatically by DSA staff and the systems we license or implement. Metadata in data set records and data dictionaries incorporate information from a broader set of sources. These records are individually curated and include departmental knowledge shared by data stewards and other departmental experts."
+    "text": "Title\n\n\nDescription\n\n\nModified\n\n\n\n\n\n\nMetadata Reference\n\n\nSummary guide and index to dataset-level metadata requirements.\n\n\n11/5/24, 12:56:19 PM\n\n\n\n\nDataset Style\n\n\nDetailed guide to the structure and contents of ODP datasets.\n\n\n11/4/24, 5:39:24 PM\n\n\n\n\nMetadata Style\n\n\nDetailed guide to dataset and field-level metadata provided for ODP data.\n\n\n11/5/24, 12:53:19 PM\n\n\n\n\nMetadata Standards\n\n\nFormal standards document for ODP metadata\n\n\n11/5/24, 12:54:22 PM\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "dataset-style.html",
@@ -126,18 +133,11 @@
     "text": "Reserved identifier field names\nThe following field names must reference Official Detroit Base Units or Office of the Assessor Parcel IDs and should not be used as names for other fields.\n\naddress_id\nbuilding_id\nparcel_id\nstreet_id\nunit_id"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index_orig.html",
+    "href": "index_orig.html",
+    "title": "Overview",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Documents",
-    "section": "",
-    "text": "Metadata Reference\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nDataset Style\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nMetadata Style\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nMetadata Standards\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+    "text": "The City of Detroit creates metadata for datasets published to the Open Data Portal to help people discover, use and interpret data we produce and collect. Where available, we have adopted widely used and published standards to help ensure metadata can be used and shared across information systems used by the City and external systems and services such as Data.gov and Internet search engines.\nThere are four types of metadata records for open data sets: Catalog records, Data set records, Distribution records, and Data Dictionaries.\n\nCatalog records group together data set records and contain a high level technical description of the collection of data sets as a whole. Through ArcGIS Online (AGO), for example, there is a catalog record with an entry for each and every data set available through the Open Data Portal.\nData set records are used to describe each data set as a whole. They contain information such as title, keywords, a narrative description, and the spatial and temporal scope of data included in the data set. Data set records are nested in catalogs.\nDistribution records describe files and APIs through which the public can access and obtain copies of data sets. Data distribution records are nested inside data set records.\nData dictionaries describe individual data fields (i.e., columns or variables) that comprise a data set. Data dictionaries are linked to data set records.\n\nTypically, most of the metadata in catalog and distribution records are created programmatically by DSA staff and the systems we license or implement. Metadata in data set records and data dictionaries incorporate information from a broader set of sources. These records are individually curated and include departmental knowledge shared by data stewards and other departmental experts."
   },
   {
     "objectID": "metadata-standards.html",
@@ -173,19 +173,5 @@
     "title": "Metadata Standards",
     "section": "References",
     "text": "References\nCity of Detroit (2021). Data governance plan. City of Detroit Data Governance Plan. See Google Doc\nIANA (Internat Assigned Numbers Authority; 2023, January 18). Media type. http://www.iana.org/assignments/media-types/media-types.xhtml\n\"Media type\" (2022, Dec 30). Wikipedia. https://en.wikipedia.org/wiki/Media_type\nKononow, P. (2017, Aug 29). Captain Obvious' guide to column descriptions: Data dictionary best practices. Dataedo website. https://dataedo.com/blog/captain-obivous-guide-to-column-descriptions-data-dictionary-best-practices\nNew York City Open Data (2022). Data coordinators: Open data dictionary template. https://opendata.cityofnewyork.us/open-data-coordinators/\nOpen Science Foundation (OSF; 2022). OSF Support: How to make a data dictionary. https://help.osf.io/article/217-how-to-make-a-data-dictionary\nSCOPE (Statistical Community of Practice and Engagement) Metadata Group (2014). Metadata Schema for Data Dictionaries. https://github.com/USG-SCOPE"
-  },
-  {
-    "objectID": "metadata-quick-reference.html",
-    "href": "metadata-quick-reference.html",
-    "title": "Metadata Quick Reference",
-    "section": "",
-    "text": "t1_dataset_cheatsheet &lt;- read_csv(\"data/cheatsheet_t1_dataset_record.csv\")\n\nRows: 18 Columns: 7\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (7): name, url, section, description, use, use_notes, format_constraints\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nreactable(\n  t1_dataset_cheatsheet,\n  class = \"tbl-reactable\",\n  compact = TRUE,\n  highlight = TRUE,\n  details = function(index) {\n     if (!is.na(t1_dataset_cheatsheet$format_constraints[index])) {\n       htmltools::div(style = \"margin: 2rem\",\n                      \"ODP Format Constraints \\n\",\n                      htmltools::tags$pre(paste(t1_dataset_cheatsheet$format_constraints[index]))\n         )\n     }\n  },\n  columns = list(\n    name = colDef(\n      name = \"Field Name\", \n      html = TRUE,\n      cell = function(value, index){\n        if (!is.na(t1_dataset_cheatsheet$url[index])) {\n          sprintf('&lt;a href=\"%s\" target=\"_blank\"&gt;%s&lt;/a&gt;',t1_dataset_cheatsheet$url[index], value)\n        } else value\n        }),\n    url = colDef(show = FALSE),\n    section = colDef(show = FALSE),\n    description = colDef(name = \"Field Description\"),\n    use = colDef(name = \"When to Use\"),\n    use_notes = colDef(name = \"Use Notes\"),\n    format_constraints = colDef(show = FALSE)\n))"
-  },
-  {
-    "objectID": "metadata-quick-reference.html#dataset-metadata",
-    "href": "metadata-quick-reference.html#dataset-metadata",
-    "title": "Metadata Quick Reference",
-    "section": "",
-    "text": "t1_dataset_cheatsheet &lt;- read_csv(\"data/cheatsheet_t1_dataset_record.csv\")\n\nRows: 18 Columns: 7\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (7): name, url, section, description, use, use_notes, format_constraints\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nreactable(\n  t1_dataset_cheatsheet,\n  class = \"tbl-reactable\",\n  compact = TRUE,\n  highlight = TRUE,\n  details = function(index) {\n     if (!is.na(t1_dataset_cheatsheet$format_constraints[index])) {\n       htmltools::div(style = \"margin: 2rem\",\n                      \"ODP Format Constraints \\n\",\n                      htmltools::tags$pre(paste(t1_dataset_cheatsheet$format_constraints[index]))\n         )\n     }\n  },\n  columns = list(\n    name = colDef(\n      name = \"Field Name\", \n      html = TRUE,\n      cell = function(value, index){\n        if (!is.na(t1_dataset_cheatsheet$url[index])) {\n          sprintf('&lt;a href=\"%s\" target=\"_blank\"&gt;%s&lt;/a&gt;',t1_dataset_cheatsheet$url[index], value)\n        } else value\n        }),\n    url = colDef(show = FALSE),\n    section = colDef(show = FALSE),\n    description = colDef(name = \"Field Description\"),\n    use = colDef(name = \"When to Use\"),\n    use_notes = colDef(name = \"Use Notes\"),\n    format_constraints = colDef(show = FALSE)\n))"
   }
 ]

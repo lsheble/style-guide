@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-file-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -189,93 +189,70 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1729791130104" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./metadata-quick-reference.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./metadata-quick-reference.html">
-<h3 class="no-anchor listing-title">
-Metadata Reference
-</h3>
-<div class="listing-subtitle">
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 
-</div>
-<div class="listing-description">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Title
+</th>
+<th>
+Description
+</th>
+<th>
+Modified
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-file-modified-sort="1730829379437" data-listing-reading-time-sort="2" data-listing-title-sort="Metadata Reference" data-listing-filename-sort="metadata-quick-reference.qmd">
+<td>
+<a href="./metadata-quick-reference.html" class="title listing-title">Metadata Reference</a>
+</td>
+<td>
+<span class="listing-description">Summary guide and index to dataset-level metadata requirements.</span>
+</td>
+<td>
+<span class="listing-file-modified">11/5/24, 12:56:19 PM</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-file-modified-sort="1730759964598" data-listing-reading-time-sort="13" data-listing-title-sort="Dataset Style" data-listing-filename-sort="dataset-style.qmd">
+<td>
+<a href="./dataset-style.html" class="title listing-title">Dataset Style</a>
+</td>
+<td>
+<span class="listing-description">Detailed guide to the structure and contents of ODP datasets.</span>
+</td>
+<td>
+<span class="listing-file-modified">11/4/24, 5:39:24 PM</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-file-modified-sort="1730829199977" data-listing-reading-time-sort="145" data-listing-title-sort="Metadata Style" data-listing-filename-sort="metadata-style.qmd">
+<td>
+<a href="./metadata-style.html" class="title listing-title">Metadata Style</a>
+</td>
+<td>
+<span class="listing-description">Detailed guide to dataset and field-level metadata provided for ODP data.</span>
+</td>
+<td>
+<span class="listing-file-modified">11/5/24, 12:53:19 PM</span>
+</td>
+</tr>
+<tr data-index="3" data-listing-file-modified-sort="1730829262231" data-listing-reading-time-sort="7" data-listing-title-sort="Metadata Standards" data-listing-filename-sort="metadata-standards.qmd">
+<td>
+<a href="./metadata-standards.html" class="title listing-title">Metadata Standards</a>
+</td>
+<td>
+<span class="listing-description">Formal standards document for ODP metadata</span>
+</td>
+<td>
+<span class="listing-file-modified">11/5/24, 12:54:22 PM</span>
+</td>
+</tr>
+</tbody>
 
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./metadata-quick-reference.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1717439493823" data-listing-reading-time-sort="13">
-<div class="thumbnail">
-<p><a href="./dataset-style.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./dataset-style.html">
-<h3 class="no-anchor listing-title">
-Dataset Style
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-The Detroit Open Data Portal (ODP) is the primary gateway to current City of Detroit data that can be accessed through maps, data tables, dashboards, and applications…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./dataset-style.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1729198501051" data-listing-reading-time-sort="145">
-<div class="thumbnail">
-<p><a href="./metadata-style.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./metadata-style.html">
-<h3 class="no-anchor listing-title">
-Metadata Style
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-Metadata helps users find, use, and draw valid conclusions from data. Ensuring important details, such as titles, descriptions, and data sources, are consistently and…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./metadata-style.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1729091461602" data-listing-reading-time-sort="7">
-<div class="thumbnail">
-<p><a href="./metadata-standards.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./metadata-standards.html">
-<h3 class="no-anchor listing-title">
-Metadata Standards
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-The City of Detroit creates metadata for datasets published to the Open Data Portal to help people discover, use and interpret data we produce and collect. Where available…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./metadata-standards.html"> </a>
-</div>
-</div>
-</div>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

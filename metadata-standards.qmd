@@ -1,5 +1,7 @@
 ---
 title: "Metadata Standards"
+description: "Formal standards document for ODP metadata"
+file-modified:
 ---
 
 # Introduction

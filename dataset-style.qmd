@@ -1,5 +1,7 @@
 ---
 title: "Dataset Style"
+description: "Detailed guide to the structure and contents of ODP datasets."
+file-modified: 
 ---
 
 The Detroit Open Data Portal (ODP) is the primary gateway to current City of Detroit data that can be accessed through maps, data tables, dashboards, and applications designed to support the needs and interests of our primary user groups in the conduct of their everyday business and lives. Our primary user groups are represented in the following personas: Detroit Resident, Detroit Community Group, Detroit Businessperson, Detroit Researcher, City of Detroit Staff, and Detroit Public Administrator. [Information about ODP personas](https://data.detroitmi.gov/pages/personas) is available through the Open Data Portal.
