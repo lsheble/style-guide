@@ -100,7 +100,7 @@ Example: For the Parcels dataset, the Credits are:
 
 ## Tags
 
-Descriptive keywords and phrases should be included in the "Tags" metadata field. Tags are meant to enhance the user search experience and help people find relevant datasets easily and efficiently. Search terms a general or specialist user might use to find a dataset make good tags. Think about searching for the dataset from the perspectives of the [ODP Personas](<https://data.detroitmi.gov/pages/personas>). What keywords or tags would each persona use to find the dataset? **Audience level: General and Specialist**
+Descriptive keywords and phrases should be included in the "Tags" metadata field. Tags are meant to enhance the user search experience and help people find relevant datasets easily and efficiently. Search terms a general or specialist user might use to find a dataset make good tags. Think about searching for the dataset from the perspectives of the [ODP Personas](https://data.detroitmi.gov/pages/personas). What keywords or tags would each persona use to find the dataset? **Audience level: General and Specialist**
 
 When creating tags, follow these criteria:
 
@@ -202,27 +202,48 @@ The "Field Alias" metadata field enables us to display a user-friendly field lab
 
 Recurring field names with agreed upon spelling, formatting, and field labels will be established and maintained in the data catalog. Field labels in Table X will be included in that resource. Recurring fields that have reserved field labels and names are listed in the table along with examples of examples of corresponding data values.
 
-|Field Label|Field Name|Examples|Notes|
-|:----|:----|:----|:----|
-|Address|address|2 Woodward Ave.; 11740 E Jefferson Ave| |
-|Street Number|street_number|2; 11740| |
-|Street Prefix|street_prefix|N; E; S; W| |
-|Street Name|street_name|Woodward; Jefferson; Gratiot; Grand River| |
-|Street Type|street_type|Dr.; Ave.; St.| |
-|Unit Type|unit_type|Apt, Unit; Ste| |
-|Unit Number|unit_number|202; A; Upper; S608|Mailing address form of the unit identifier.|
-|Parcel Number|parcel_id|01004068-85; 21000422.|Alphanumeric identifier that may include a decimal point and/or hyphen|
-|Address ID|address_id|361652; 339,692|Numeric identifier of varying length. Comma separator often displayed in ODP|
-|Building ID|building_id|653; 95746|Numeric identifier of varying length. Comma separator often displayed in ODP|
-|Street ID|street_id|34,747; 23575|Numeric identifier of varying length. Comma separator often displayed in ODP|
-|Unit ID|unit_id|5,813, 256822|Numeric identifier of varying length. Comma separator often displayed in ODP|
-|Zip Code|zip_code|48226; 48214| |
-|Neighborhood|neighborhood|Downtown; Jefferson Chalmers| |
-|Council District|council_district|1; 2; 3; 4; 5; 6; 7| |
-|(Police) Precinct|police_precinct|02; 03; 04; 05; 06; 07; 08; 09; 10; 11; 12|Leading zero may be omitted. “Police” may be dropped from DPD dataset labels.|
-|(Fire) Battalion|fire_battalion|01; 02; 03; 04; 05; 06; 07; 08; HPFD; HTFD|Leading zero may be omitted. “Fire” may be dropped from DFD dataset labels.|
-|Latitude|latitude|-82.96674073| |
-|Longitude|longitude|42.36821293| |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Field Label       | Field Name       | Examples                                   | Notes                                                                         |
++:==================+:=================+:===========================================+:==============================================================================+
+| Address           | address          | 2 Woodward Ave.; 11740 E Jefferson Ave     |                                                                               |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Street Number     | street_number    | 2; 11740                                   |                                                                               |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Street Prefix     | street_prefix    | N; E; S; W                                 |                                                                               |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Street Name       | street_name      | Woodward; Jefferson; Gratiot; Grand River  |                                                                               |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Street Type       | street_type      | Dr.; Ave.; St.                             |                                                                               |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Unit Type         | unit_type        | Apt, Unit; Ste                             |                                                                               |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Unit Number       | unit_number      | 202; A; Upper; S608                        | Mailing address form of the unit identifier.                                  |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Parcel Number     | parcel_id        | 01004068-85; 21000422.                     | Alphanumeric identifier that may include a decimal point and/or hyphen        |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Address ID        | address_id       | 361652; 339,692                            | Numeric identifier of varying length. Comma separator often displayed in ODP  |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Building ID       | building_id      | 653; 95746                                 | Numeric identifier of varying length. Comma separator often displayed in ODP  |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Street ID         | street_id        | 34,747; 23575                              | Numeric identifier of varying length. Comma separator often displayed in ODP  |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Unit ID           | unit_id          | 5,813, 256822                              | Numeric identifier of varying length. Comma separator often displayed in ODP  |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Zip Code          | zip_code         | 48226; 48214                               |                                                                               |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Neighborhood      | neighborhood     | Downtown; Jefferson Chalmers               |                                                                               |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Council District  | council_district | 1; 2; 3; 4; 5; 6; 7                        |                                                                               |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| (Police) Precinct | police_precinct  | 02; 03; 04; 05; 06; 07; 08; 09; 10; 11; 12 | Leading zero may be omitted. "Police" may be dropped from DPD dataset labels. |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| (Fire) Battalion  | fire_battalion   | 01; 02; 03; 04; 05; 06; 07; 08; HPFD; HTFD | Leading zero may be omitted. "Fire" may be dropped from DFD dataset labels.   |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Latitude          | latitude         | -82.96674073                               |                                                                               |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+| Longitude         | longitude        | 42.36821293                                |                                                                               |
++-------------------+------------------+--------------------------------------------+-------------------------------------------------------------------------------+
+
 : Reserved field labels and field names, with examples of corresponding data values
 
 ### Field Description
@@ -241,9 +262,9 @@ A complete and informative field description should be provided for every field.
 
 -   Ensure field descriptions do not exceed 500 characters.
 
-## Field value type
+### Field value type
 
-For each field, one of fifteen field value types can be selected (see table below, whichi was Modified from the [Esri Field Value table](https://doc.arcgis.com/en/arcgis-online/manage-data/describe-fields.htm#:~:text=configuring%20pop%2Dups.-,Field%20value%20types,-The%20following%20table)). The icon displayed for a field in AGO and ODP attribute metadata views is determined by the field value type. The field value type should be thought of as a categorical description of the data values rather than a "data type" in the stricter sense. Selecting a field value type does not alter the underlying data table. 
+For each field, one of fifteen field value types can be selected (see table below, whichi was Modified from the [Esri Field Value table](https://doc.arcgis.com/en/arcgis-online/manage-data/describe-fields.htm#:~:text=configuring%20pop%2Dups.-,Field%20value%20types,-The%20following%20table)). The icon displayed for a field in AGO and ODP attribute metadata views is determined by the field value type. The field value type should be thought of as a categorical description of the data values rather than a "data type" in the stricter sense. Selecting a field value type does not alter the underlying data table.
 
 +----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Field value type**       | **Field value or feature characteristics**                                                                                                                                                                                                                                                 | **Example ODP Fields**                                                                                                                                |
@@ -318,9 +339,6 @@ For each field, one of fifteen field value types can be selected (see table belo
 |                            |                                                                                                                                                                                                                                                                                            |                                                                                                                                                       |
 |                            |                                                                                                                                                                                                                                                                                            | Hearing Time                                                                                                                                          |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-
 
 ## References
 
